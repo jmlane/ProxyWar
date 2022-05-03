@@ -1,0 +1,150 @@
+/* Define Mission Attributes
+
+*/
+
+AIKills = 1;
+DisabledAI = 1;
+DisableChannels[] = {	
+	{0, true, true},
+	{1, true, true},
+	{2, false, false},
+	{3, false, false},
+	{4, true, true},
+	{5, false, false},
+};
+EnableDebugConsole = 2;
+Respawn = "Base";
+RespawnDelay = 3;
+respawnTemplates[] = {"Base","Spectator","Wave"};
+ReviveMode = 1;
+ReviveUnconsciousStateMode = 0;
+ReviveRequiredTrait = 0;
+ReviveRequiredItems = 1;
+ReviveRequiredItemsFakConsumed = 0;
+ReviveDelay = 90;
+ReviveMedicSpeedMultiplier = 2;
+ReviveForceRespawnDelay = 3;
+ReviveBleedOutDelay = 240;
+ShowHUD[] = {1,1,1,1,1,1,1,1,1,0,0};
+/*Here while I solve HUD issue.
+showHUD [
+  true, // scriptedHUD
+  true, // info
+  true, // radar
+  true, // compass
+  true, // direction
+  true, // menu
+  true, // group
+  true, // cursors
+  true, // panels
+  true, // kills
+  true  // showIcon3D
+];
+*/
+//Define Mission Functions
+
+class CfgDebriefing
+{  
+	class BluWin
+	{
+		title = "FIA Victory";
+		subtitle = "Freedom. Independence. Glory.";
+		description = "The NATO supported insurgency has defeated CSAT supported government forces.";
+		pictureBackground = "";
+		picture = "flag_FIA";
+	};  
+
+	class RedWin
+	{
+		title = "AAF Victory";
+		subtitle = "Safety. Security. Tradition.";
+		description = "The CSAT supported armed forces have defeated the NATO backed rebellion.";
+		pictureBackground = "";
+		picture = "flag_Altis";
+	};
+};
+
+class CfgFunctions {
+	#include "Functions\CfgFunctions.hpp"
+};
+
+class CfgRemoteExec {
+	class Functions {
+		class ASG_FNC_LCEBA {
+			allowedTargets = 0;
+			jip = 0;
+		};
+		class ASG_FNC_LCERA {
+			allowedTargets = 0;
+			jip = 0;
+		};
+		class ASG_FNC_LCEBB {
+			allowedTargets = 0;
+			jip = 0;
+		};
+		class ASG_FNC_LCERB {
+			allowedTargets = 0;
+			jip = 0;
+		};
+		class ASG_FNC_LCEBC {
+			allowedTargets = 0;
+			jip = 0;
+		};
+		class ASG_FNC_LCERC {
+			allowedTargets = 0;
+			jip = 0;
+		};
+		class ASG_FNC_LCEBD {
+			allowedTargets = 0;
+			jip = 0;
+		};
+		class ASG_FNC_LCERD {
+			allowedTargets = 0;
+			jip = 0;
+		};
+		class ASG_FNC_BACE {
+			allowedTargets = 0;
+			jip = 0;
+		};
+	};
+};
+
+
+/* Description Scratchwork
+
+//Notes for creation of customized support options.
+
+class CfgCommunicationMenu
+{
+	class myArtillery
+	{
+		text = "Artillery Strike";		// Text displayed in the menu and in a notification
+		submenu = "";					// Submenu opened upon activation (expression is ignored when submenu is not empty.)
+		expression = "player setVariable ['BIS_SUPP_request', ['Artillery', _pos]];";	// Code executed upon activation
+		icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\artillery_ca.paa";				// Icon displayed permanently next to the command menu
+		cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";				// Custom cursor displayed when the item is selected
+		enable = "1";					// Simple expression condition for enabling the item
+		removeAfterExpressionCall = 1;	// 1 to remove the item after calling
+	};
+
+	class menu_comms_1
+	{
+		text = "Menu Comms 1";
+		submenu = "#USER:MENU_COMMS_1";  // will open submenu that is defined as global variable MENU_COMMS_1
+		expression = "";
+		icon = "";
+		cursor = "";
+		enable = "1";
+		removeAfterExpressionCall = 0;
+	};
+};
+
+DisableChannels = {
+// {Channel ID, disable text, disable voice}	
+	{0, false, false}, //Global
+	{1, false, false}, //Side
+	{2, false, false}, //Command
+	{3, false, false}, //Group
+	{4, false, false}, //Vehicle
+	{5, false, false}, //Direct
+};

@@ -1,18 +1,32 @@
-waitUntil {time > 1};
-[player] execVM "Gear.sqf";
-_SetChannel = SetCurrentChannel 5;
+//_unit = _this select 0;
 
-/*
-This addAction ["Deploy", "BDeploy1.sqf",[],1.5,true,true,"","true",1,true,"",""];
+/* Error
+13:52:20 Error in expression <e _unit) do {
+Case East: {
+RedTickets = RedTickets -1;
+PublicVariable "RedTicket>
+13:52:20   Error position: <RedTickets -1;
+PublicVariable "RedTicket>
+13:52:20   Error Undefined variable in expression: redtickets
+*/
 
-This disableAI "RADIOPROTOCOL";
+WaitUntil {time > 1};
 
-TARGET
-AUTOTARGET 
-WEAPONAIM 
-SUPPRESSION 
-CHECKVISIBLE
-COVER
-
-PATH - stops movement, but not target alignment...
-RADIOPROTOCOL - Stops AI from talking and texting. Can still issue orders.
+Switch (side player) do {
+	Case East: {
+		RedTickets = RedTickets -1;
+		PublicVariable "RedTickets";
+		HintSilent format ["%1 Tickets Remaining", RedTickets];
+		If (RedTickets < 1) then {
+			"BluWin" remoteExecCall ["BIS_fnc_endMission", 0];
+		};
+	};
+	Case West: {
+		BluTickets = BluTickets -1;
+		PublicVariable "BluTickets";
+		HintSilent format ["%1 Tickets Remaining", BluTickets];
+		If (BluTickets < 1) then {
+			"RedWin" remoteExecCall ["BIS_fnc_endMission", 0];
+		};
+	};
+};
