@@ -14,7 +14,7 @@ DisableChannels[] = {
 };
 EnableDebugConsole = 2;
 Respawn = "Base";
-RespawnDelay = 3;
+RespawnDelay = 300;
 respawnTemplates[] = {"Base","Spectator","Wave"};
 ReviveMode = 1;
 ReviveUnconsciousStateMode = 0;

@@ -1,7 +1,5 @@
 /*
 To Do:
-	- https://community.bistudio.com/wiki/createCenter
-
 	- Casualty recovery?
 	- Each critical casualty or death costs their side one ticket.
 	- Every casualty, corpse, or wreck that is recovered and returned to their home base restores (a) lost ticket(s) to their side.
@@ -19,10 +17,10 @@ _LogicSide = createGroup sideLogic;
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
 //Create ticket pool for score.
-BluTickets = 12;
+BluTickets = 120;
 PublicVariable "BluTickets";
 
-RedTickets = 12;
+RedTickets = 120;
 PublicVariable "RedTickets";
 
 //Create sector pool for sector ownership comparison.
@@ -47,10 +45,7 @@ BA11 setGroupOwner owner HC1;
 //Run sector script.
 [] Spawn ASG_FNC_Sector;
 
-// Enabled for this test phase. 
-
 //Create high command modules.
-
 BHCCA = _LogicSide createUnit ["HighCommand",[0,0,0],[],0,"NONE"];
 BHCCA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
 BHCSA = _LogicSide createUnit ["HighCommandSubordinate",[0,0,0],[],0,"NONE"];
@@ -75,7 +70,7 @@ Sleep 2;
 [] Spawn ASG_FNC_LCEBA;
 [] Spawn ASG_FNC_LCERA;
 Sleep 12;
-/*Disabled for testing.
+
 [] Spawn ASG_FNC_LCEBB;
 [] Spawn ASG_FNC_LCERB;
 Sleep 12;

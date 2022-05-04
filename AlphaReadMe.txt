@@ -20,24 +20,27 @@ or competitively with up to sixty four players per side.
 //Complete
 256 playable slots, 128 playable at a time.
 Adaptive 1-8 player high command combined arms companies.
-Basic objectives.
-Basic respawn.
-Dynamic groups.
-Mission endings.
-"Real" artillery support.
-Virtual air support (to be supplanted by "real" air support).
+Basic Medical
+Dynamic Groups
+Objective Based Reinforcement (AI Respawn)
+Sector Control Objectives
+Mission End State
+"Real" Artillery Support
+Virtual Air Support
 
 //Pending Testing
-Basic Medical
 
 //In Progress
 ASG AI Update
-Custom Medical
-Custom Sector Control
+Ticket Bleed System
 
 //Wishlist
-CASEVAC System (returning wounded characters to designated zone restores tickets to pool)
-Civilians and Traffic (interactive set dressing that populates areas, but flees and delete themselves when panicked)
+//*Priority Systems
+AI Medical System
+CASEVAC System (returning wounded characters to appropriate zone restores tickets to pool)
+Civilians and Traffic (interactive set dressing that populates areas, but flee and delete themselves when panicked)
+Custom Medical System
+Immersive Reinforcement (Respawn Upgrade)
 In-Campaign Training and Ranks
 High command/AI expansion:
 	- Break Contact/Rally
@@ -47,11 +50,12 @@ High command/AI expansion:
 	- Report and Request (Commander map reduction)
 	- Tactical Operations Center for high commmanders.
 Persistent Battlefield
-Reinforcement (AI Respawn)
-Respawn
+Recon System:
+ - Indirect player control of local (AI) forces.
+ - Players can submit SALUTE reports to local forces.
+ - If local forces 1) have no player high commander and 2) the report indicates a potential victory, then the local forces will attack.
 Simple Logistics (& Vehicle Repair)
-Skiplobby (Dependend upon logistics and persistence)
-Ticket Bleed (Scenario End)
+Skiplobby (Dependent upon logistics and persistence)
 
 //Required in Editor:
 (Subject to change, may be saved and deployed as a single "composition" in 3den Editor.)
@@ -116,17 +120,19 @@ Functions
     - Gear
         - BLIGear //Equips blufor allied local forces (AI) with appropriate gear.
         - RLIGear //Equips opfor allied local forces (AI) with appropriate gear.
-        - SOFGear (old) //Eqips "SOF" special operations forces (players) of all factions with appropriate gear. Depricated.
-        - SOFGear //Eqips "SOF" special operations forces (players) of all factions with appropriate gear. Depricated.
+        - SOFGear (old) //Equips "SOF" special operations forces (players) of all factions with appropriate gear. Depricated.
+        - SOFGear //Equips "SOF" special operations forces (players) of all factions with appropriate gear. Depricated.
     - Sectors
         - Custom control points for scoring in the sandbox. Incomplete.
     - Support
         - Nothing. Incomplete.
     - CfgFunctions //Configure functions.
-ReadMe //This file. Describes and maps the project.
+AlphaReadMe //This file. Describes and maps the project.
 Description //Server options and definitions of functions. Incomplete.
 InitPlayerLocal //Locally executed by each player upon server join. Equips gear, assigns subordinate units, assigns support.
 InitServer //Executed by server. Creates local forces (AI) and assigns support.
 Mission //Mission file from the Eden editor.
+Reinforce //Executed on every sector capture. Reinforces local forces.
 ScratchWork //Scenario research notes, not used by the scenario.
 Sectors //Notes and projects on sectors.
+TakeCommand //Possible idea for high commanders to manually take and resign command of local forces.
