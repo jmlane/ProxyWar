@@ -44,7 +44,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_1';
 				_Flag = createMarker ['Objective_1', markerPos 'Sector_1'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -80,7 +80,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_2';
 				_Flag = createMarker ['Objective_2', markerPos 'Sector_2'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -116,7 +116,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_3';
 				_Flag = createMarker ['Objective_3', markerPos 'Sector_3'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -152,13 +152,13 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_4';
 				_Flag = createMarker ['Objective_4', markerPos 'Sector_4'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
 			},""
 		];
-
+/* Disabled for development.
 	//Sector_5
 		_Flag_5 = createMarker ['Objective_5', markerPos 'Sector_5'];
 		_Flag_5 setMarkerType 'hd_objective_noShadow';
@@ -188,7 +188,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_5';
 				_Flag = createMarker ['Objective_5', markerPos 'Sector_5'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -224,7 +224,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_6';
 				_Flag = createMarker ['Objective_6', markerPos 'Sector_6'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -260,7 +260,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_7';
 				_Flag = createMarker ['Objective_7', markerPos 'Sector_7'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -296,7 +296,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_8';
 				_Flag = createMarker ['Objective_8', markerPos 'Sector_8'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -332,7 +332,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_9';
 				_Flag = createMarker ['Objective_9', markerPos 'Sector_9'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -368,7 +368,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_10';
 				_Flag = createMarker ['Objective_10', markerPos 'Sector_10'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -404,7 +404,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_11';
 				_Flag = createMarker ['Objective_11', markerPos 'Sector_11'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -440,7 +440,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_12';
 				_Flag = createMarker ['Objective_12', markerPos 'Sector_12'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -476,7 +476,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_13';
 				_Flag = createMarker ['Objective_13', markerPos 'Sector_13'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -512,7 +512,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_14';
 				_Flag = createMarker ['Objective_14', markerPos 'Sector_14'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -548,7 +548,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_15';
 				_Flag = createMarker ['Objective_15', markerPos 'Sector_15'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -584,7 +584,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_16';
 				_Flag = createMarker ['Objective_16', markerPos 'Sector_16'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -620,7 +620,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_17';
 				_Flag = createMarker ['Objective_17', markerPos 'Sector_17'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -656,7 +656,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_18';
 				_Flag = createMarker ['Objective_18', markerPos 'Sector_18'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -692,7 +692,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_19';
 				_Flag = createMarker ['Objective_19', markerPos 'Sector_19'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -728,7 +728,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_20';
 				_Flag = createMarker ['Objective_20', markerPos 'Sector_20'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -764,7 +764,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_21';
 				_Flag = createMarker ['Objective_21', markerPos 'Sector_21'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -800,7 +800,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_22';
 				_Flag = createMarker ['Objective_22', markerPos 'Sector_22'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -836,7 +836,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_23';
 				_Flag = createMarker ['Objective_23', markerPos 'Sector_23'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
@@ -872,12 +872,12 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_24';
 				_Flag = createMarker ['Objective_24', markerPos 'Sector_24'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 				[] execVM "Reinforce.sqf";
 			},""
-		];
+		];*/
 };
 /*
 //Ticket Build Method (Ghetto)(Working)
@@ -911,7 +911,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_1';
 				_Flag = createMarker ['Objective_1', markerPos 'Sector_1'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -945,7 +945,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_2';
 				_Flag = createMarker ['Objective_2', markerPos 'Sector_2'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -979,7 +979,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_3';
 				_Flag = createMarker ['Objective_3', markerPos 'Sector_3'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1013,7 +1013,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_4';
 				_Flag = createMarker ['Objective_4', markerPos 'Sector_4'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1047,7 +1047,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_5';
 				_Flag = createMarker ['Objective_5', markerPos 'Sector_5'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1081,7 +1081,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_6';
 				_Flag = createMarker ['Objective_6', markerPos 'Sector_6'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1115,7 +1115,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_7';
 				_Flag = createMarker ['Objective_7', markerPos 'Sector_7'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1149,7 +1149,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_8';
 				_Flag = createMarker ['Objective_8', markerPos 'Sector_8'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1183,7 +1183,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_9';
 				_Flag = createMarker ['Objective_9', markerPos 'Sector_9'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1217,7 +1217,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_10';
 				_Flag = createMarker ['Objective_10', markerPos 'Sector_10'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1251,7 +1251,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_11';
 				_Flag = createMarker ['Objective_11', markerPos 'Sector_11'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1285,7 +1285,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_12';
 				_Flag = createMarker ['Objective_12', markerPos 'Sector_12'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1319,7 +1319,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_13';
 				_Flag = createMarker ['Objective_13', markerPos 'Sector_13'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1353,7 +1353,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_14';
 				_Flag = createMarker ['Objective_14', markerPos 'Sector_14'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1387,7 +1387,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_15';
 				_Flag = createMarker ['Objective_15', markerPos 'Sector_15'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1421,7 +1421,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_16';
 				_Flag = createMarker ['Objective_16', markerPos 'Sector_16'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1455,7 +1455,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_17';
 				_Flag = createMarker ['Objective_17', markerPos 'Sector_17'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1489,7 +1489,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_18';
 				_Flag = createMarker ['Objective_18', markerPos 'Sector_18'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1523,7 +1523,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_19';
 				_Flag = createMarker ['Objective_19', markerPos 'Sector_19'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1557,7 +1557,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_20';
 				_Flag = createMarker ['Objective_20', markerPos 'Sector_20'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1591,7 +1591,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_21';
 				_Flag = createMarker ['Objective_21', markerPos 'Sector_21'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1625,7 +1625,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_22';
 				_Flag = createMarker ['Objective_22', markerPos 'Sector_22'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1659,7 +1659,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_23';
 				_Flag = createMarker ['Objective_23', markerPos 'Sector_23'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""
@@ -1693,7 +1693,7 @@ If (isServer) then {
 			toString {
 				DeleteMarker 'Objective_24';
 				_Flag = createMarker ['Objective_24', markerPos 'Sector_24'];
-				_Flag setMarkerType 'Flag_Altis';
+				_Flag setMarkerType 'Flag_FIA';
 				BluTickets = BluTickets +30;
 				PublicVariable 'BluTickets';
 			},""

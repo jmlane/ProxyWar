@@ -45,6 +45,7 @@ BA11 setGroupOwner owner HC1;
 //Run sector script.
 [] Spawn ASG_FNC_Sector;
 
+/* Disabled for testing.
 //Create high command modules.
 BHCCA = _LogicSide createUnit ["HighCommand",[0,0,0],[],0,"NONE"];
 BHCCA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
