@@ -33,6 +33,21 @@ Switch (playerSide) do {
 		player addHeadgear "H_HelmetB_light_black";
 	};
 
+	Case Independent: {
+		player addWeapon "arifle_Mk20C_plain_F";
+		player addPrimaryWeaponItem "optic_ACO_grn";
+		player addPrimaryWeaponItem "30Rnd_556x45_Stanag";
+
+		player forceAddUniform "U_I_CombatUniform";
+		player addVest "V_PlateCarrierIA1_dgtl";
+
+		for "_i" from 1 to 2 do {player addItemToVest "FirstAidKit";};
+		for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
+		for "_i" from 1 to 2 do {player addItemToVest "Chemlight_yellow";};
+		for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
+		player addHeadgear "H_HelmetIA";
+	};
+
 	Case West: {
 		player addWeapon "arifle_SPAR_01_blk_F";
 		player addPrimaryWeaponItem "optic_Aco";
