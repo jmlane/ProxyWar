@@ -1,32 +1,13 @@
-//_unit = _this select 0;
-
-/* Error
-13:52:20 Error in expression <e _unit) do {
-Case East: {
-RedTickets = RedTickets -1;
-PublicVariable "RedTicket>
-13:52:20   Error position: <RedTickets -1;
-PublicVariable "RedTicket>
-13:52:20   Error Undefined variable in expression: redtickets
-*/
-
+//Subtracts Tickets for a Player Redeploy
 WaitUntil {time > 1};
 
 Switch (side player) do {
 	Case East: {
-		RedTickets = RedTickets -1;
+		RedTickets = RedTickets - 12;
 		PublicVariable "RedTickets";
-		HintSilent format ["%1 Tickets Remaining", RedTickets];
-		If (RedTickets < 1) then {
-			"BluWin" remoteExecCall ["BIS_fnc_endMission", 0];
-		};
 	};
 	Case West: {
-		BluTickets = BluTickets -1;
+		BluTickets = BluTickets - 12;
 		PublicVariable "BluTickets";
-		HintSilent format ["%1 Tickets Remaining", BluTickets];
-		If (BluTickets < 1) then {
-			"RedWin" remoteExecCall ["BIS_fnc_endMission", 0];
-		};
 	};
 };

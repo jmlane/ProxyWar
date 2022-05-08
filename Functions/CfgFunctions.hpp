@@ -25,6 +25,6 @@ class ASG {
 	{
 		file = "Functions\Sectors";
 		class Sector {};
-//		class SectorX {};
+		class TicketBleed {};
 	};
 };

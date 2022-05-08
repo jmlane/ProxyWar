@@ -1,19 +1,31 @@
 //Ticket Bleed (May be two scripts)
-//PsuedoCode Ticket Bleed
-While {RedZones < (0.8*BluZones)} do {
-  Sleep 1;
-  RedTickets = RedTickets - 1;
+//Simple Ticket Bleed
+
+If (isServer) then {
+  WaitUntil {
+    BluZones > 0 and RedZones > 0;
+  };
+
+  While {
+    Sleep 3;
+    BluTickets > 0 and RedTickets > 0;
+  } do {
+      if (RedZones < (0.6 * BluZones)) then {
+          RedTickets = RedTickets - 1;
+          publicVariable "RedTickets";
+      };
+
+      if (BluZones < (0.6 * RedZones)) then {
+          BluTickets = BluTickets - 1;
+          publicVariable "BluTickets";
+      };
+  };
+
+  If (BluTickets < 1) then {
+    'RedWin' remoteExecCall ['BIS_fnc_endMission', 0];
+  };
+
+  If (RedTickets < 1) then {
+    'BluWin' remoteExecCall ['BIS_fnc_endMission', 0];
+  };
 };
-
-/*Script Notes
-  https://community.bistudio.com/wiki/Function
-  https://community.bistudio.com/wiki/Arma_3:_Writing_a_Function
-  https://community.bistudio.com/wiki/Control_Structures
-  https://community.bistudio.com/wiki/sleep
-  https://community.bistudio.com/wiki/while
-  https://community.bistudio.com/wiki/Operators
-  https://community.bistudio.com/wiki/and
-  https://community.bistudio.com/wiki/if
-  https://community.bistudio.com/wiki/or
-*/
-

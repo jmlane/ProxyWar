@@ -17,10 +17,10 @@ _LogicSide = createGroup sideLogic;
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
 //Create ticket pool for score.
-BluTickets = 120;
+BluTickets = 300;
 PublicVariable "BluTickets";
 
-RedTickets = 120;
+RedTickets = 300;
 PublicVariable "RedTickets";
 
 //Create sector pool for sector ownership comparison.
@@ -35,7 +35,7 @@ PublicVariable "RedZones";
 
 Sleep 2; //Delay appears to allow the server to more easily construct the scenario.
 
-//Utilize headless clients. Appeared to be working. Disabled for testing.
+//Utilize headless clients. Appeared to be working. Disabled for development.
 /*
 Call ASG_FNC_LCE;
 RemoteExec ["ASG_FNC_LCE", HC1];
@@ -44,8 +44,8 @@ BA11 setGroupOwner owner HC1;
 
 //Run sector script.
 [] Spawn ASG_FNC_Sector;
+[] Spawn ASG_FNC_TicketBleed;
 
-/* Disabled for testing.
 //Create high command modules.
 BHCCA = _LogicSide createUnit ["HighCommand",[0,0,0],[],0,"NONE"];
 BHCCA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];

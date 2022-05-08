@@ -20,6 +20,7 @@ D - Delta Company
 - Players with backpack radios have less static.
 - Retransmission stations can reduce static.
 - Players with terminals may transmit text messages?
+- High commanders must be within 'range' to give orders.
 */
 
 //Ensure player exists.
