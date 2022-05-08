@@ -82,7 +82,7 @@ Sleep 12;
 
 [] Spawn ASG_FNC_LCEBD;
 [] Spawn ASG_FNC_LCERD;
-Sleep 12;
+Sleep 300;
 
 //Enable artillery and mortar support and add to support menu for relevant commander.
 

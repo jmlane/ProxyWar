@@ -22,7 +22,7 @@ If (isServer) then {
 	_SectorAAF_1 = createTrigger ["EmptyDetector", markerPos "Sector_1", false];
 	_SectorAAF_1 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_1 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_1 setTriggerInterval 5;
+	_SectorAAF_1 setTriggerInterval 60;
 	_SectorAAF_1 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -40,7 +40,7 @@ If (isServer) then {
 	_SectorFIA_1 = createTrigger ["EmptyDetector", markerPos "Sector_1", false];
 	_SectorFIA_1 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_1 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_1 setTriggerInterval 5;
+	_SectorFIA_1 setTriggerInterval 60;
 	_SectorFIA_1 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -61,7 +61,7 @@ If (isServer) then {
 	_SectorAAF_2 = createTrigger ["EmptyDetector", markerPos "Sector_2", false];
 	_SectorAAF_2 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_2 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_2 setTriggerInterval 5;
+	_SectorAAF_2 setTriggerInterval 60;
 	_SectorAAF_2 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -79,7 +79,7 @@ If (isServer) then {
 	_SectorFIA_2 = createTrigger ["EmptyDetector", markerPos "Sector_2", false];
 	_SectorFIA_2 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_2 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_2 setTriggerInterval 5;
+	_SectorFIA_2 setTriggerInterval 60;
 	_SectorFIA_2 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -100,7 +100,7 @@ If (isServer) then {
 	_SectorAAF_3 = createTrigger ["EmptyDetector", markerPos "Sector_3", false];
 	_SectorAAF_3 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_3 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_3 setTriggerInterval 5;
+	_SectorAAF_3 setTriggerInterval 60;
 	_SectorAAF_3 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -118,7 +118,7 @@ If (isServer) then {
 	_SectorFIA_3 = createTrigger ["EmptyDetector", markerPos "Sector_3", false];
 	_SectorFIA_3 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_3 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_3 setTriggerInterval 5;
+	_SectorFIA_3 setTriggerInterval 60;
 	_SectorFIA_3 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -139,7 +139,7 @@ If (isServer) then {
 	_SectorAAF_4 = createTrigger ["EmptyDetector", markerPos "Sector_4", false];
 	_SectorAAF_4 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_4 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_4 setTriggerInterval 5;
+	_SectorAAF_4 setTriggerInterval 60;
 	_SectorAAF_4 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -157,7 +157,7 @@ If (isServer) then {
 	_SectorFIA_4 = createTrigger ["EmptyDetector", markerPos "Sector_4", false];
 	_SectorFIA_4 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_4 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_4 setTriggerInterval 5;
+	_SectorFIA_4 setTriggerInterval 60;
 	_SectorFIA_4 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -178,7 +178,7 @@ If (isServer) then {
 	_SectorAAF_5 = createTrigger ["EmptyDetector", markerPos "Sector_5", false];
 	_SectorAAF_5 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_5 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_5 setTriggerInterval 5;
+	_SectorAAF_5 setTriggerInterval 60;
 	_SectorAAF_5 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -196,7 +196,7 @@ If (isServer) then {
 	_SectorFIA_5 = createTrigger ["EmptyDetector", markerPos "Sector_5", false];
 	_SectorFIA_5 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_5 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_5 setTriggerInterval 5;
+	_SectorFIA_5 setTriggerInterval 60;
 	_SectorFIA_5 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -217,7 +217,7 @@ If (isServer) then {
 	_SectorAAF_6 = createTrigger ["EmptyDetector", markerPos "Sector_6", false];
 	_SectorAAF_6 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_6 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_6 setTriggerInterval 5;
+	_SectorAAF_6 setTriggerInterval 60;
 	_SectorAAF_6 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -235,7 +235,7 @@ If (isServer) then {
 	_SectorFIA_6 = createTrigger ["EmptyDetector", markerPos "Sector_6", false];
 	_SectorFIA_6 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_6 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_6 setTriggerInterval 5;
+	_SectorFIA_6 setTriggerInterval 60;
 	_SectorFIA_6 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -256,7 +256,7 @@ If (isServer) then {
 	_SectorAAF_7 = createTrigger ["EmptyDetector", markerPos "Sector_7", false];
 	_SectorAAF_7 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_7 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_7 setTriggerInterval 5;
+	_SectorAAF_7 setTriggerInterval 60;
 	_SectorAAF_7 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -274,7 +274,7 @@ If (isServer) then {
 	_SectorFIA_7 = createTrigger ["EmptyDetector", markerPos "Sector_7", false];
 	_SectorFIA_7 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_7 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_7 setTriggerInterval 5;
+	_SectorFIA_7 setTriggerInterval 60;
 	_SectorFIA_7 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -295,7 +295,7 @@ If (isServer) then {
 	_SectorAAF_8 = createTrigger ["EmptyDetector", markerPos "Sector_8", false];
 	_SectorAAF_8 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_8 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_8 setTriggerInterval 5;
+	_SectorAAF_8 setTriggerInterval 60;
 	_SectorAAF_8 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -313,7 +313,7 @@ If (isServer) then {
 	_SectorFIA_8 = createTrigger ["EmptyDetector", markerPos "Sector_8", false];
 	_SectorFIA_8 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_8 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_8 setTriggerInterval 5;
+	_SectorFIA_8 setTriggerInterval 60;
 	_SectorFIA_8 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -334,7 +334,7 @@ If (isServer) then {
 	_SectorAAF_9 = createTrigger ["EmptyDetector", markerPos "Sector_9", false];
 	_SectorAAF_9 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_9 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_9 setTriggerInterval 5;
+	_SectorAAF_9 setTriggerInterval 60;
 	_SectorAAF_9 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -352,7 +352,7 @@ If (isServer) then {
 	_SectorFIA_9 = createTrigger ["EmptyDetector", markerPos "Sector_9", false];
 	_SectorFIA_9 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_9 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_9 setTriggerInterval 5;
+	_SectorFIA_9 setTriggerInterval 60;
 	_SectorFIA_9 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -373,7 +373,7 @@ If (isServer) then {
 	_SectorAAF_10 = createTrigger ["EmptyDetector", markerPos "Sector_10", false];
 	_SectorAAF_10 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_10 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_10 setTriggerInterval 5;
+	_SectorAAF_10 setTriggerInterval 60;
 	_SectorAAF_10 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -391,7 +391,7 @@ If (isServer) then {
 	_SectorFIA_10 = createTrigger ["EmptyDetector", markerPos "Sector_10", false];
 	_SectorFIA_10 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_10 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_10 setTriggerInterval 5;
+	_SectorFIA_10 setTriggerInterval 60;
 	_SectorFIA_10 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -412,7 +412,7 @@ If (isServer) then {
 	_SectorAAF_11 = createTrigger ["EmptyDetector", markerPos "Sector_11", false];
 	_SectorAAF_11 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_11 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_11 setTriggerInterval 5;
+	_SectorAAF_11 setTriggerInterval 60;
 	_SectorAAF_11 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -430,7 +430,7 @@ If (isServer) then {
 	_SectorFIA_11 = createTrigger ["EmptyDetector", markerPos "Sector_11", false];
 	_SectorFIA_11 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_11 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_11 setTriggerInterval 5;
+	_SectorFIA_11 setTriggerInterval 60;
 	_SectorFIA_11 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -451,7 +451,7 @@ If (isServer) then {
 	_SectorAAF_12 = createTrigger ["EmptyDetector", markerPos "Sector_12", false];
 	_SectorAAF_12 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_12 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_12 setTriggerInterval 5;
+	_SectorAAF_12 setTriggerInterval 60;
 	_SectorAAF_12 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -469,7 +469,7 @@ If (isServer) then {
 	_SectorFIA_12 = createTrigger ["EmptyDetector", markerPos "Sector_12", false];
 	_SectorFIA_12 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_12 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_12 setTriggerInterval 5;
+	_SectorFIA_12 setTriggerInterval 60;
 	_SectorFIA_12 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -490,7 +490,7 @@ If (isServer) then {
 	_SectorAAF_13 = createTrigger ["EmptyDetector", markerPos "Sector_13", false];
 	_SectorAAF_13 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_13 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_13 setTriggerInterval 5;
+	_SectorAAF_13 setTriggerInterval 60;
 	_SectorAAF_13 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -508,7 +508,7 @@ If (isServer) then {
 	_SectorFIA_13 = createTrigger ["EmptyDetector", markerPos "Sector_13", false];
 	_SectorFIA_13 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_13 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_13 setTriggerInterval 5;
+	_SectorFIA_13 setTriggerInterval 60;
 	_SectorFIA_13 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -529,7 +529,7 @@ If (isServer) then {
 	_SectorAAF_14 = createTrigger ["EmptyDetector", markerPos "Sector_14", false];
 	_SectorAAF_14 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_14 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_14 setTriggerInterval 5;
+	_SectorAAF_14 setTriggerInterval 60;
 	_SectorAAF_14 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -547,7 +547,7 @@ If (isServer) then {
 	_SectorFIA_14 = createTrigger ["EmptyDetector", markerPos "Sector_14", false];
 	_SectorFIA_14 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_14 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_14 setTriggerInterval 5;
+	_SectorFIA_14 setTriggerInterval 60;
 	_SectorFIA_14 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -568,7 +568,7 @@ If (isServer) then {
 	_SectorAAF_15 = createTrigger ["EmptyDetector", markerPos "Sector_15", false];
 	_SectorAAF_15 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_15 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_15 setTriggerInterval 5;
+	_SectorAAF_15 setTriggerInterval 60;
 	_SectorAAF_15 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -586,7 +586,7 @@ If (isServer) then {
 	_SectorFIA_15 = createTrigger ["EmptyDetector", markerPos "Sector_15", false];
 	_SectorFIA_15 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_15 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_15 setTriggerInterval 5;
+	_SectorFIA_15 setTriggerInterval 60;
 	_SectorFIA_15 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -607,7 +607,7 @@ If (isServer) then {
 	_SectorAAF_16 = createTrigger ["EmptyDetector", markerPos "Sector_16", false];
 	_SectorAAF_16 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_16 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_16 setTriggerInterval 5;
+	_SectorAAF_16 setTriggerInterval 60;
 	_SectorAAF_16 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -625,7 +625,7 @@ If (isServer) then {
 	_SectorFIA_16 = createTrigger ["EmptyDetector", markerPos "Sector_16", false];
 	_SectorFIA_16 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_16 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_16 setTriggerInterval 5;
+	_SectorFIA_16 setTriggerInterval 60;
 	_SectorFIA_16 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -646,7 +646,7 @@ If (isServer) then {
 	_SectorAAF_17 = createTrigger ["EmptyDetector", markerPos "Sector_17", false];
 	_SectorAAF_17 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_17 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_17 setTriggerInterval 5;
+	_SectorAAF_17 setTriggerInterval 60;
 	_SectorAAF_17 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -664,7 +664,7 @@ If (isServer) then {
 	_SectorFIA_17 = createTrigger ["EmptyDetector", markerPos "Sector_17", false];
 	_SectorFIA_17 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_17 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_17 setTriggerInterval 5;
+	_SectorFIA_17 setTriggerInterval 60;
 	_SectorFIA_17 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -685,7 +685,7 @@ If (isServer) then {
 	_SectorAAF_18 = createTrigger ["EmptyDetector", markerPos "Sector_18", false];
 	_SectorAAF_18 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_18 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_18 setTriggerInterval 5;
+	_SectorAAF_18 setTriggerInterval 60;
 	_SectorAAF_18 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -703,7 +703,7 @@ If (isServer) then {
 	_SectorFIA_18 = createTrigger ["EmptyDetector", markerPos "Sector_18", false];
 	_SectorFIA_18 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_18 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_18 setTriggerInterval 5;
+	_SectorFIA_18 setTriggerInterval 60;
 	_SectorFIA_18 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -724,7 +724,7 @@ If (isServer) then {
 	_SectorAAF_19 = createTrigger ["EmptyDetector", markerPos "Sector_19", false];
 	_SectorAAF_19 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_19 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_19 setTriggerInterval 5;
+	_SectorAAF_19 setTriggerInterval 60;
 	_SectorAAF_19 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -742,7 +742,7 @@ If (isServer) then {
 	_SectorFIA_19 = createTrigger ["EmptyDetector", markerPos "Sector_19", false];
 	_SectorFIA_19 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_19 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_19 setTriggerInterval 5;
+	_SectorFIA_19 setTriggerInterval 60;
 	_SectorFIA_19 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -763,7 +763,7 @@ If (isServer) then {
 	_SectorAAF_20 = createTrigger ["EmptyDetector", markerPos "Sector_20", false];
 	_SectorAAF_20 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_20 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_20 setTriggerInterval 5;
+	_SectorAAF_20 setTriggerInterval 60;
 	_SectorAAF_20 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -781,7 +781,7 @@ If (isServer) then {
 	_SectorFIA_20 = createTrigger ["EmptyDetector", markerPos "Sector_20", false];
 	_SectorFIA_20 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_20 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_20 setTriggerInterval 5;
+	_SectorFIA_20 setTriggerInterval 60;
 	_SectorFIA_20 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -802,7 +802,7 @@ If (isServer) then {
 	_SectorAAF_21 = createTrigger ["EmptyDetector", markerPos "Sector_21", false];
 	_SectorAAF_21 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_21 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_21 setTriggerInterval 5;
+	_SectorAAF_21 setTriggerInterval 60;
 	_SectorAAF_21 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -820,7 +820,7 @@ If (isServer) then {
 	_SectorFIA_21 = createTrigger ["EmptyDetector", markerPos "Sector_21", false];
 	_SectorFIA_21 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_21 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_21 setTriggerInterval 5;
+	_SectorFIA_21 setTriggerInterval 60;
 	_SectorFIA_21 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -841,7 +841,7 @@ If (isServer) then {
 	_SectorAAF_22 = createTrigger ["EmptyDetector", markerPos "Sector_22", false];
 	_SectorAAF_22 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_22 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_22 setTriggerInterval 5;
+	_SectorAAF_22 setTriggerInterval 60;
 	_SectorAAF_22 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -859,7 +859,7 @@ If (isServer) then {
 	_SectorFIA_22 = createTrigger ["EmptyDetector", markerPos "Sector_22", false];
 	_SectorFIA_22 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_22 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_22 setTriggerInterval 5;
+	_SectorFIA_22 setTriggerInterval 60;
 	_SectorFIA_22 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -880,7 +880,7 @@ If (isServer) then {
 	_SectorAAF_23 = createTrigger ["EmptyDetector", markerPos "Sector_23", false];
 	_SectorAAF_23 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_23 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_23 setTriggerInterval 5;
+	_SectorAAF_23 setTriggerInterval 60;
 	_SectorAAF_23 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -898,7 +898,7 @@ If (isServer) then {
 	_SectorFIA_23 = createTrigger ["EmptyDetector", markerPos "Sector_23", false];
 	_SectorFIA_23 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_23 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_23 setTriggerInterval 5;
+	_SectorFIA_23 setTriggerInterval 60;
 	_SectorFIA_23 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {
@@ -919,7 +919,7 @@ If (isServer) then {
 	_SectorAAF_24 = createTrigger ["EmptyDetector", markerPos "Sector_24", false];
 	_SectorAAF_24 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorAAF_24 setTriggerArea [100, 100, getDir this, false];
-	_SectorAAF_24 setTriggerInterval 5;
+	_SectorAAF_24 setTriggerInterval 60;
 	_SectorAAF_24 setTriggerStatements [
         toString {West countSide thisList < 0.4*(East countSide thisList);},
         toString {
@@ -937,7 +937,7 @@ If (isServer) then {
 	_SectorFIA_24 = createTrigger ["EmptyDetector", markerPos "Sector_24", false];
 	_SectorFIA_24 setTriggerActivation ["ANY", "PRESENT", true];
 	_SectorFIA_24 setTriggerArea [100, 100, getDir this, false];
-	_SectorFIA_24 setTriggerInterval 5;
+	_SectorFIA_24 setTriggerInterval 60;
 	_SectorFIA_24 setTriggerStatements [
         toString {East countSide thisList < 0.4*(West countSide thisList);},
         toString {

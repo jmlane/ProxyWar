@@ -28,4 +28,12 @@ If (isServer) then {
   If (RedTickets < 1) then {
     'BluWin' remoteExecCall ['BIS_fnc_endMission', 0];
   };
+
+  If (RedZones > 22) then {
+    'RedWin' remoteExecCall ['BIS_fnc_endMission', 0];
+  };
+
+  If (BluZones > 22) then {
+    'BluWin' remoteExecCall ['BIS_fnc_endMission', 0];
+  };
 };

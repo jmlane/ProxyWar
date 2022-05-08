@@ -194,7 +194,7 @@ Sleep 0.2;
 
 Hint "Command assigned.";
 
-/* Don't remember... think this is the virtual air support. 
+/* Virtual Air Support
 
 Sleep 0.2;
 
