@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=549;
+	toggles=677;
 	class ItemIDProvider
 	{
-		nextID=472;
+		nextID=473;
 	};
 	class MarkerIDProvider
 	{
@@ -34,13 +34,14 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Characters_F",
 	"A3_Weapons_F",
-	"A3_Characters_F_Tacops"
+	"A3_Characters_F_Tacops",
+	"A3_Modules_F_Hc"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -76,6 +77,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item5
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=9204396;
@@ -105,7 +113,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			dataType="Layer";
@@ -21393,6 +21401,39 @@ class Mission
 			{
 			};
 			id=468;
+		};
+		class Item29
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26775,22.049992,24615};
+				angles[]={0.026668631,0.52342421,0.022654373};
+			};
+			name="BHD66HC";
+			id=472;
+			type="HighCommand";
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=1;
+		};
+		class Links
+		{
+			items=1;
+			class Item0
+			{
+				linkID=0;
+				item0=472;
+				item1=460;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };
