@@ -21411,7 +21411,7 @@ class Mission
 				angles[]={0.026668631,0.52342421,0.022654373};
 			};
 			name="BHD66HC";
-			init="this setVariable ['BIS_fnc_initModules_disableAutoActivation', false];";
+			init="this setvariable ['addAllGroups', false];";
 			id=472;
 			type="HighCommand";
 		};
