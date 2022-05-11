@@ -8,7 +8,7 @@ class EditorData
 	toggles=677;
 	class ItemIDProvider
 	{
-		nextID=473;
+		nextID=476;
 	};
 	class MarkerIDProvider
 	{
@@ -113,7 +113,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			dataType="Layer";
@@ -21415,21 +21415,44 @@ class Mission
 			id=472;
 			type="HighCommand";
 		};
+		class Item30
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15314,17.411331,17449};
+				angles[]={6.2791882,0,6.2778621};
+			};
+			name="RHD66HC";
+			init="this setvariable ['addAllGroups', false];";
+			id=475;
+			type="HighCommand";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=1;
+			nextID=2;
 		};
 		class Links
 		{
-			items=1;
+			items=2;
 			class Item0
 			{
 				linkID=0;
 				item0=472;
 				item1=460;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=475;
+				item1=133;
 				class CustomData
 				{
 					type="Sync";

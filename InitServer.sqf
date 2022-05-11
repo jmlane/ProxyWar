@@ -51,21 +51,6 @@ BA11 setGroupOwner owner HC1;
 [] Spawn ASG_FNC_Sector;
 [] Spawn ASG_FNC_TicketBleed;
 
-//Create high command modules.
-BHCCA = _LogicSide createUnit ["HighCommand",[0,0,0],[],0,"NONE"];
-BHCCA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
-BHCSA = _LogicSide createUnit ["HighCommandSubordinate",[0,0,0],[],0,"NONE"];
-BHCSA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
-BHCSA SynchronizeObjectsAdd [BHCCA];
-BHCCA SynchronizeObjectsAdd [BFDO];
-
-RHCCA = _LogicSide createUnit ["HighCommand",[0,0,0],[],0,"NONE"];
-RHCCA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
-RHCSA = _LogicSide createUnit ["HighCommandSubordinate",[0,0,0],[],0,"NONE"];
-RHCSA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
-RHCSA SynchronizeObjectsAdd [RHCCA];
-RHCCA SynchronizeObjectsAdd [RFDO];
-
 //Spawn "SOF" (special operations forces (players)) and "ACE" (Air Combat Elements (AI air support)).
 [] Spawn ASG_FNC_SOF;
 //Disabled for this test phase. [] Spawn ASG_FNC_BACE;
