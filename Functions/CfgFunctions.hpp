@@ -1,5 +1,17 @@
 class ASG {
 	tag = "ASG";
+	class Command
+	{
+		file = "Functions\Command";
+		class BAA {};
+		class BBB {};
+		class BCC {};
+		class BDD {};
+		class RAA {};
+		class RBB {};
+		class RCC {};
+		class RDD {};
+	};
 	class Forces
 	{
 		file = "Functions\Forces";

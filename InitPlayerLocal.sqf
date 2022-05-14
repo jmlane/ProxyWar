@@ -1,30 +1,6 @@
-//Player's local initialization. Run locally by each player when they load into the game map.
-/*
-B - Blufor
-R - Redfor (Opfor)
-H - Headquarters?
-A - Alpha Company
-B - Bravo Company
-C - Charlie Company
-D - Delta Company
-1 - First platoon, section, or squad.
-2 - Second platoon, section, or squad.
-3 - Third platoon, section, or squad.
-4 - Fourth platoon, section, or squad.
-6 - Headquarters or headquarters element.
-*/
-
-/* To Do:
-- Players may join custom channels.
-- Players get static effect when recieving messages from too far away.
-- Players with backpack radios have less static.
-- Retransmission stations can reduce static.
-- Players with terminals may transmit text messages?
-- High commanders must be within 'range' to give orders.
-*/
+//Player's local initialization. Run on a client's machine when they load into the game map.
 
 //Ensure player exists.
-
 WaitUntil {!isNull player};
 
 //Set to relevant voice channel.
@@ -42,10 +18,119 @@ Call ASG_FNC_SOFGear;
 
 //Tag gear for respawn.
 Player setVariable ["TAG_LoadoutStart", getUnitLoadout player];
-Player addEventHandler ["Respawn", { player setUnitLoadout (player getVariable ["TAG_LoadoutStart", []]);}];
+Player addEventHandler ["Respawn", {player setUnitLoadout (player getVariable ["TAG_LoadoutStart", []]);}];
 
 //Initialize client side dynamic group framework.
 ["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
+
+
+/*Working block. Dedicated tested.
+If ((!isNil "BHA66") and {player == BHA66}) then {
+	"BluCommandAA.sqf" remoteExec ["execVM", 2];
+};
+*/
+
+//Check player relevance and existance.
+//Assign appropriate command.
+// Not dedicated tested.
+If ((!isNil "BHA66") and {player == BHA66}) then {
+	RemoteExec ["ASG_FNC_BAA", 2];
+};
+
+If ((!isNil "RHA66") and {player == RHA66}) then {
+	RemoteExec ["ASG_FNC_RAA", 2];
+};
+
+If ((!isNil "BHB66") and {player == BHB66}) then {
+	RemoteExec ["ASG_FNC_BBB", 2];
+};
+
+If ((!isNil "RHB66") and {player == RHB66}) then {
+	RemoteExec ["ASG_FNC_RBB", 2];
+};
+
+If ((!isNil "BHC66") and {player == BHC66}) then {
+	RemoteExec ["ASG_FNC_BCC", 2];
+};
+
+If ((!isNil "RHC66") and {player == RHC66}) then {
+	RemoteExec ["ASG_FNC_RCC", 2];
+};
+If ((!isNil "BHD66") and {player == BHD66}) then {
+	RemoteExec ["ASG_FNC_BDD", 2];
+};
+
+If ((!isNil "RHD66") and {player == RHD66}) then {
+	RemoteExec ["ASG_FNC_RDD", 2];
+};
+
+
+/*
+If ((!isNil "BHD66") and {isNil "BHA66"} and {player == BHD66}) then {
+	RemoteExec ["ASG_FNC_BAD", 2];
+};
+
+If ((!isNil "RHD66") and {isNil "RHA66"} and {player == RHD66}) then {
+	RemoteExec ["ASG_FNC_RAD", 2];
+};
+
+If ((!isNil "BHD66") and {isNil "BHB66"} and {player == BHD66}) then {
+	RemoteExec ["ASG_FNC_BBD", 2];
+};
+
+If ((!isNil "RHD66") and {isNil "RHB66"} and {player == RHD66}) then {
+	RemoteExec ["ASG_FNC_RBD", 2];
+};
+
+If ((!isNil "BHD66") and {isNil "BHC66"} and {player == BHD66}) then {
+	RemoteExec ["ASG_FNC_BCD", 2];
+};
+
+If ((!isNil "RHD66") and {isNil "RHC66"} and {player == RHD66}) then {
+	RemoteExec ["ASG_FNC_RCD", 2];
+};
+*/
+/*
+	{
+		BHD66 HCSetGroup [_x];
+	} foreach [BA11, BA12, BA13, BA21, BA22, BA23, BA31, BA32, BA41, BA42];
+/*
+BHCCA = LogicSide createUnit ["HighCommand",[0,0,0],[],0,"NONE"];
+BHCSA = LogicSide createUnit ["HighCommandSubordinate",[0,0,0],[],0,"NONE"];
+BHCSA SynchronizeObjectsAdd [BHCCA];
+BHCCA SynchronizeObjectsAdd [BHD66];
+
+If ((!isNil "BHD66") and {isNil "BHA66"} and {player == BHD66}) then {
+	{
+		BHD66 HCSetGroup [_x];
+	} foreach [BA11, BA12, BA13, BA21, BA22, BA23, BA31, BA32, BA41, BA42];
+	[BHD66, BA6R, BA4R] call BIS_fnc_addSupportLink;
+};
+
+//Create high command modules.
+WaitUntil {!isNil "RA42"};
+
+BHCCA = LogicSide createUnit ["HighCommand",[0,0,0],[],0,"NONE"];
+BHCCA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
+BHCSA = LogicSide createUnit ["HighCommandSubordinate",[0,0,0],[],0,"NONE"];
+BHCSA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
+BHCSA SynchronizeObjectsAdd [BHCCA];
+BHCCA SynchronizeObjectsAdd [BFDO];
+
+WaitUntil {!isNil "BA6R"};
+If ((!isNil "BHD66") and {isNil "BHA66"} and {player == BHD66}) then {
+	{
+		BHD66 HCSetGroup [_x];
+	} foreach [BA11, BA12, BA13, BA21, BA22, BA23, BA31, BA32, BA41, BA42];
+	[BHD66, BA6R, BA4R] call BIS_fnc_addSupportLink;
+};
+/*
+RHCCA = _LogicSide createUnit ["HighCommand",[0,0,0],[],0,"NONE"];
+RHCCA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
+RHCSA = _LogicSide createUnit ["HighCommandSubordinate",[0,0,0],[],0,"NONE"];
+RHCSA setVariable ['BIS_fnc_initModules_disableAutoActivation', false];
+RHCSA SynchronizeObjectsAdd [RHCCA];
+RHCCA SynchronizeObjectsAdd [RFDO];
 
 //Wait for relevant subordinates to spawn.
 
@@ -191,101 +276,3 @@ If ((!isNil "RHD66") and {player == RHD66}) then {
 };
 
 Sleep 0.2;
-
-Hint "Command assigned.";
-
-/* Virtual Air Support
-
-Sleep 0.2;
-
-[BD6A, BD6R, BD4] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE1A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE1B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE1C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE1D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE2A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE2B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE2C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE2D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE3A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE3B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE3C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE3D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE4A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE4B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE4C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE4D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE5A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE5B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE5C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE5D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE6A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE6B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE6C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE6D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE7A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE7B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE7C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE7D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE8A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE8B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE8C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BACE8D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE1A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE1B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE1C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE1D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE2A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE2B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE2C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE2D] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE3A] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE3B] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE3C] call BIS_fnc_addSupportLink;
-[BD6A, BD6R, BATE3D] call BIS_fnc_addSupportLink;
-
-[RD6A, RD6R, RD4] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE1A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE1B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE1C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE1D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE2A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE2B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE2C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE2D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE3A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE3B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE3C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE3D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE4A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE4B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE4C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE4D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE5A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE5B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE5C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE5D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE6A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE6B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE6C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE6D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE7A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE7B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE7C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE7D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE8A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE8B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE8C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RACE8D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE1A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE1B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE1C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE1D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE2A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE2B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE2C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE2D] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE3A] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE3B] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE3C] call BIS_fnc_addSupportLink;
-[RD6A, RD6R, RATE3D] call BIS_fnc_addSupportLink;

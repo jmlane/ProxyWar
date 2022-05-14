@@ -1,7 +1,8 @@
 /* Define Mission Attributes
-
+The description.ext file is run before the mission map is loaded.
 */
 
+//Define Mission Settings
 AIKills = 1;
 DisabledAI = 1;
 DisableChannels[] = {	
@@ -41,8 +42,81 @@ showHUD [
   true  // showIcon3D
 ];
 */
-//Define Mission Functions
 
+//Define Mission Endings
+class CfgDebriefing
+{  
+	class BluWin
+	{
+		title = "FIA Victory";
+		subtitle = "CSAT ate shit and died.";
+		description = "NATO rules, CSAT fucks goats.";
+		pictureBackground = "";
+		picture = "flag_FIA";
+	};  
+
+	class RedWin
+	{
+		title = "AAF Victory";
+		subtitle = "NATO's mothers give consensual head to CSAT boys.";
+		description = "I've literally never stopped sucking, and NATO found a way to suck more.";
+		pictureBackground = "";
+		picture = "flag_Altis";
+	};
+};
+
+//Define Mission Functions
+class CfgFunctions {
+	#include "Functions\CfgFunctions.hpp"
+};
+
+//Define Remote Executions
+class CfgRemoteExec {
+	class Functions {
+		Mode = 2; // 2 = unrestricted remote execution.
+		JIP = 1; // 1 = JIP flag can be set.
+		class ASG_FNC_LCEBA {
+			allowedTargets = 0; // 0 = all machines.
+			JIP = 0;
+		};
+		class ASG_FNC_LCERA {
+			allowedTargets = 0;
+			JIP = 0;
+		};
+		class ASG_FNC_LCEBB {
+			allowedTargets = 0;
+			JIP = 0;
+		};
+		class ASG_FNC_LCERB {
+			allowedTargets = 0;
+			JIP = 0;
+		};
+		class ASG_FNC_LCEBC {
+			allowedTargets = 0;
+			JIP = 0;
+		};
+		class ASG_FNC_LCERC {
+			allowedTargets = 0;
+			JIP = 0;
+		};
+		class ASG_FNC_LCEBD {
+			allowedTargets = 0;
+			JIP = 0;
+		};
+		class ASG_FNC_LCERD {
+			allowedTargets = 0;
+			JIP = 0;
+		};
+		class ASG_FNC_BACE {
+			allowedTargets = 0;
+			JIP = 0;
+		};
+	};
+};
+
+/* Experimental Section
+//////////////////////////////
+//Working Debriefings.
 class CfgDebriefing
 {  
 	class BluWin
@@ -63,49 +137,19 @@ class CfgDebriefing
 		picture = "flag_Altis";
 	};
 };
+//////////////////////////////
 
-class CfgFunctions {
-	#include "Functions\CfgFunctions.hpp"
-};
-
-class CfgRemoteExec {
-	class Functions {
-		class ASG_FNC_LCEBA {
-			allowedTargets = 0;
-			jip = 0;
-		};
-		class ASG_FNC_LCERA {
-			allowedTargets = 0;
-			jip = 0;
-		};
-		class ASG_FNC_LCEBB {
-			allowedTargets = 0;
-			jip = 0;
-		};
-		class ASG_FNC_LCERB {
-			allowedTargets = 0;
-			jip = 0;
-		};
-		class ASG_FNC_LCEBC {
-			allowedTargets = 0;
-			jip = 0;
-		};
-		class ASG_FNC_LCERC {
-			allowedTargets = 0;
-			jip = 0;
-		};
-		class ASG_FNC_LCEBD {
-			allowedTargets = 0;
-			jip = 0;
-		};
-		class ASG_FNC_LCERD {
-			allowedTargets = 0;
-			jip = 0;
-		};
-		class ASG_FNC_BACE {
-			allowedTargets = 0;
-			jip = 0;
-		};
+class CfgCommunicationMenu
+{
+	class takeCommandAlpha
+	{
+		text = "Take Alpha Command";		// Text displayed in the menu and in a notification
+		submenu = "";					// Submenu opened upon activation (expression is ignored when submenu is not empty.)
+		expression = "execVM 'takeCommandAlpha.sqf'";	// Code executed upon activation
+		icon = "";				// Icon displayed permanently next to the command menu
+		cursor = "";				// Custom cursor displayed when the item is selected
+		enable = "1";					// Simple expression condition for enabling the item
+		removeAfterExpressionCall = 0;	// 1 to remove the item after calling
 	};
 };
 
