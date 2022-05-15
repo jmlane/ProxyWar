@@ -26,20 +26,23 @@ ReviveDelay = 90;
 ReviveMedicSpeedMultiplier = 2;
 ReviveForceRespawnDelay = 3;
 ReviveBleedOutDelay = 240;
-ShowHUD[] = {1,1,1,1,1,1,1,1,1,0,0};
+ShowHUD[] = {1,1,0,0,0,1,0,0,1,0,1};
+//Disables all HUD except menus, panels, and personal info.
+//Personal info is defined by server difficulty profile.
+//ShowHUD = {1,2,3,4,5,6,7,8,9,0,1}
 /*Here while I solve HUD issue.
 showHUD [
-  true, // scriptedHUD
-  true, // info
-  true, // radar
-  true, // compass
-  true, // direction
-  true, // menu
-  true, // group
-  true, // cursors
-  true, // panels
-  true, // kills
-  true  // showIcon3D
+  true, 1 // scriptedHUD
+  true, 2 // info
+  true, 3 // radar
+  true, 4 // compass
+  true, 5 // direction
+  true, 6 // menu
+  true, 7 // group
+  true, 8 // cursors
+  true, 9 // panels
+  true, 0 // kills
+  true  1 // showIcon3D
 ];
 */
 
@@ -58,7 +61,7 @@ class CfgDebriefing
 	class RedWin
 	{
 		title = "AAF Victory";
-		subtitle = "NATO's mothers give consensual head to CSAT boys.";
+		subtitle = "NATO's mothers give sloppy handies for cheap.";
 		description = "I've literally never stopped sucking, and NATO found a way to suck more.";
 		pictureBackground = "";
 		picture = "flag_Altis";

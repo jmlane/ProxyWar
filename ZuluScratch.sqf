@@ -2,6 +2,16 @@
 //The remoteExec'ed function only has to exist on the target machine.
 "Command assigned." remoteExec ["systemChat", BHA66]; //Target can be object or clientID. 0 = global? 
 
+
+[T_1, LR1, LP1] call BIS_fnc_addSupportLink;
+
+//Utilize headless clients. Appeared to be working.
+/*
+Call ASG_FNC_LCE;
+RemoteExec ["ASG_FNC_LCE", HC1];
+BA11 setGroupOwner owner HC1;
+*/
+
 //Enable artillery and mortar support and add to support menu for relevant commander.
 BD4R = _LogicSide createUnit ["SupportProvider_Artillery",[0,0,0],[],0,"NONE"];
 BD4R setVariable ['BIS_fnc_initModules_disableAutoActivation', false];

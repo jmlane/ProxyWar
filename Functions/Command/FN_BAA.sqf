@@ -2,7 +2,6 @@
 
 //Preparatory steps.
 WaitUntil {!isNil "BD42"};
-Sleep 60;
 If (!isNil "BHA66HC") then {deleteVehicle BHA66HC}; //Fight redundancy.
 If (!isNil "BHA66HS") then {deleteVehicle BHA66HS}; //Fight redundancy.
 If (!isNil "BA4R") then {deleteVehicle BA4R}; //Fight redundancy.
