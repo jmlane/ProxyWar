@@ -131,11 +131,19 @@ Functions
         - Nothing. Incomplete.
     - CfgFunctions //Configure functions.
 AlphaReadMe //This file. Describes and maps the project.
+
 Description //Server options and definitions of functions. Incomplete.
+
 InitPlayerLocal //Locally executed by each player upon server join. Equips gear, assigns subordinate units, assigns support.
+
 InitServer //Executed by server. Creates local forces (AI) and assigns support.
+
 Mission //Mission file from the Eden editor.
+
 Reinforce //Executed on every sector capture. Reinforces local forces.
+
 ScratchWork //Scenario research notes, not used by the scenario.
+
 Sectors //Notes and projects on sectors.
+
 TakeCommand //Possible idea for high commanders to manually take and resign command of local forces.
