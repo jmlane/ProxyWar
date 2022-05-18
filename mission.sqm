@@ -8,7 +8,7 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=503;
+		nextID=519;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=18;
+		nextID=20;
 	};
 	class Camera
 	{
-		pos[]={1090.2888,43.638176,954.06097};
-		dir[]={-0.91607273,-0.40103364,-0.011799831};
-		up[]={-0.40109116,0.91602045,-0.0051695146};
-		aside[]={-0.012882384,3.5034111e-007,0.99999481};
+		pos[]={26886.471,68.240166,24611.906};
+		dir[]={-0.89674425,-0.4413853,-0.032596238};
+		up[]={-0.44109938,0.89731169,-0.01603421};
+		aside[]={-0.036325376,-8.4881776e-008,0.99935579};
 	};
 };
 binarizationWanted=0;
@@ -38,13 +38,15 @@ addons[]=
 	"A3_Boat_F_Jets_Carrier_01",
 	"A3_Modules_F_Multiplayer",
 	"A3_Modules_F_Supports",
-	"A3_Air_F_EPB_Heli_Light_03"
+	"A3_Air_F_EPB_Heli_Light_03",
+	"A3_Supplies_F_Exp_Ammoboxes",
+	"A3_Weapons_F_Ammoboxes"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -101,11 +103,19 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item8
+		{
+			className="A3_Supplies_F_Exp";
+			name="Arma 3 Apex - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
 {
-	"Jets"
+	"Jets",
+	"Expansion"
 };
 randomSeed=9204396;
 class ScenarioData
@@ -179,13 +189,13 @@ class Mission
 		month=3;
 		day=1;
 		hour=6;
-		minute=-15;
+		minute=-5;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
 	class Entities
 	{
-		items=49;
+		items=60;
 		class Item0
 		{
 			dataType="Layer";
@@ -10083,8 +10093,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={26878,24,24629};
-						angles[]={0,5.2359877,0};
+						position[]={26839,25,24537};
+						angles[]={0,2.3561945,0};
 					};
 					side="Empty";
 					class Attributes
@@ -10093,51 +10103,49 @@ class Mission
 					};
 					id=290;
 					type="Land_HelipadEmpty_F";
-					atlOffset=0.45471573;
+					atlOffset=0.70733643;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={26979,21,24745};
-						angles[]={0.010664274,5.2359877,0.019996032};
+						position[]={26940,22.470942,24653};
+						angles[]={0,2.0943949,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						name="BRPB";
 					};
 					id=291;
 					type="Land_HelipadEmpty_F";
-					atlOffset=-0.15334892;
+					atlOffset=0.098989487;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={27075,23,24870};
-						angles[]={6.2658563,5.2359877,0.012000273};
+						position[]={27036,21.676973,24778};
+						angles[]={0,2.0943949,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						name="BRPC";
 					};
 					id=292;
 					type="Land_HelipadEmpty_F";
-					atlOffset=-0.22005463;
+					atlOffset=0.03228569;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={27158,25,24978};
-						angles[]={0,5.2359877,0};
+						position[]={27119,24.569765,24886};
+						angles[]={0,2.0943949,0};
 					};
 					side="Empty";
 					class Attributes
@@ -10146,7 +10154,7 @@ class Mission
 					};
 					id=293;
 					type="Land_HelipadEmpty_F";
-					atlOffset=0.20599937;
+					atlOffset=0.45833778;
 				};
 				class Item4
 				{
@@ -20846,7 +20854,7 @@ class Mission
 				};
 			};
 			id=301;
-			atlOffset=-0.00058746338;
+			atlOffset=-0.00063514709;
 		};
 		class Item2
 		{
@@ -21478,7 +21486,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={30000,0.029998779,30000};
-				angles[]={0,2.3841858e-007,-0};
+				angles[]={0,2.3841858e-007,0};
 			};
 			side="Empty";
 			class Attributes
@@ -21494,7 +21502,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={29975,23.558441,30034};
-				angles[]={0,2.3841858e-007,-0};
+				angles[]={0,2.3841858e-007,0};
 			};
 			id=473;
 			type="ModuleRespawnVehicle_F";
@@ -21700,7 +21708,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={29979,23.557999,30016};
-				angles[]={0,2.3841858e-007,-0};
+				angles[]={0,2.3841858e-007,0};
 			};
 			name="BLP_1";
 			id=475;
@@ -21713,7 +21721,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={29979,23.557999,30052};
-				angles[]={0,2.3841858e-007,-0};
+				angles[]={0,2.3841858e-007,0};
 			};
 			name="BLP_2";
 			id=476;
@@ -21726,7 +21734,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={29981,23.557999,30016};
-				angles[]={0,2.3841858e-007,-0};
+				angles[]={0,2.3841858e-007,0};
 			};
 			name="BLR_1";
 			id=477;
@@ -21876,7 +21884,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={29981,23.557999,30052};
-				angles[]={0,2.3841858e-007,-0};
+				angles[]={0,2.3841858e-007,0};
 			};
 			name="BLR_2";
 			id=478;
@@ -22026,7 +22034,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={29972,25.421036,30052.002};
-				angles[]={0,1.5707963,-0};
+				angles[]={0,1.5707963,0};
 			};
 			side="West";
 			flags=2;
@@ -22074,10 +22082,10 @@ class Mission
 					class PositionInfo
 					{
 						position[]={29972,23.559881,30052.051};
-						angles[]={0,1.5707963,-0};
+						angles[]={0,1.5707963,0};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=1;
@@ -22085,7 +22093,6 @@ class Mission
 					};
 					id=481;
 					type="B_Helipilot_F";
-					atlOffset=10.572567;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22154,10 +22161,10 @@ class Mission
 					class PositionInfo
 					{
 						position[]={29972,23.559881,30052.051};
-						angles[]={0,1.5707963,-0};
+						angles[]={0,1.5707963,0};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=1;
@@ -22165,7 +22172,6 @@ class Mission
 					};
 					id=483;
 					type="B_Helipilot_F";
-					atlOffset=10.572567;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22303,10 +22309,10 @@ class Mission
 					class PositionInfo
 					{
 						position[]={29974.344,23.560305,30044.461};
-						angles[]={0,1.5707963,-0};
+						angles[]={0,1.5707963,0};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=1;
@@ -22314,7 +22320,7 @@ class Mission
 					};
 					id=485;
 					type="B_Helipilot_F";
-					atlOffset=209.528;
+					atlOffset=0.0004234314;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22383,10 +22389,10 @@ class Mission
 					class PositionInfo
 					{
 						position[]={29974.344,23.560305,30044.461};
-						angles[]={0,1.5707963,-0};
+						angles[]={0,1.5707963,0};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=1;
@@ -22394,7 +22400,7 @@ class Mission
 					};
 					id=486;
 					type="B_Helipilot_F";
-					atlOffset=209.528;
+					atlOffset=0.0004234314;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22525,7 +22531,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={29972,25.42103,30016.002};
-				angles[]={0,1.5707963,-0};
+				angles[]={0,1.5707963,0};
 			};
 			side="West";
 			flags=2;
@@ -22589,10 +22595,10 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1013.232,23.559437,899.685};
-						angles[]={-0,4.712389,0};
+						angles[]={0,4.712389,0};
 					};
 					side="East";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						skill=1;
@@ -22600,6 +22606,7 @@ class Mission
 					};
 					id=490;
 					type="O_helipilot_F";
+					atlOffset=209.528;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22668,10 +22675,10 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1013.232,23.559437,899.685};
-						angles[]={-0,4.712389,0};
+						angles[]={0,4.712389,0};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=1;
@@ -22679,6 +22686,7 @@ class Mission
 					};
 					id=492;
 					type="O_helipilot_F";
+					atlOffset=209.528;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22778,6 +22786,7 @@ class Mission
 				};
 			};
 			id=489;
+			atlOffset=209.52844;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22808,16 +22817,17 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1028,25.421474,984.0011};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="East";
-			flags=6;
+			flags=2;
 			class Attributes
 			{
 				lock="UNLOCKED";
 			};
 			id=493;
 			type="I_Heli_light_03_unarmed_F";
+			atlOffset=209.52844;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22855,7 +22865,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1012.3401,23.559429,861.01984};
-						angles[]={-0,4.712389,0};
+						angles[]={0,4.712389,0};
 					};
 					side="East";
 					flags=3;
@@ -22866,7 +22876,7 @@ class Mission
 					};
 					id=495;
 					type="O_helipilot_F";
-					atlOffset=10.572567;
+					atlOffset=209.52798;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22935,7 +22945,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1012.3401,23.559429,861.01984};
-						angles[]={-0,4.712389,0};
+						angles[]={0,4.712389,0};
 					};
 					side="East";
 					flags=1;
@@ -22946,7 +22956,7 @@ class Mission
 					};
 					id=496;
 					type="O_helipilot_F";
-					atlOffset=10.572567;
+					atlOffset=209.52798;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23046,7 +23056,7 @@ class Mission
 				};
 			};
 			id=494;
-			atlOffset=10.572567;
+			atlOffset=10.572577;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23077,7 +23087,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1028,25.42103,948.0011};
-				angles[]={-0,4.712389,0};
+				angles[]={0,4.712389,0};
 			};
 			side="East";
 			flags=2;
@@ -23087,7 +23097,7 @@ class Mission
 			};
 			id=497;
 			type="I_Heli_light_03_unarmed_F";
-			atlOffset=10.572567;
+			atlOffset=10.572577;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23636,6 +23646,441 @@ class Mission
 					};
 				};
 				nAttributes=7;
+			};
+		};
+		class Item49
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26764.398,21.568058,24636.602};
+				angles[]={-0,0.78508693,6.2820935};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=503;
+			type="Box_NATO_Equip_F";
+			atlOffset=0.095869064;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""Binocular"",""Rangefinder"",""Laserdesignator_03"",""ItemGPS"",""MineDetector"",""ChemicalDetector_01_watch_F"",""B_UavTerminal"",""NVGoggles_INDEP""],[6,4,4,2,4,6,4,12]],[[""B_HMG_01_support_F"",""B_HMG_01_weapon_F"",""B_GMG_01_weapon_F"",""B_Mortar_01_support_F"",""B_Mortar_01_weapon_F"",""B_Static_Designator_01_weapon_F"",""B_RadioBag_01_mtp_F"",""B_UAV_01_backpack_F"",""B_UAV_06_backpack_F"",""B_UGV_02_Science_backpack_F"",""B_UGV_02_Demining_backpack_F""],[4,2,2,2,2,2,4,1,1,1,1]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item50
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26765.813,21.694452,24635.188};
+				angles[]={-0,0.78508693,6.2820935};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=504;
+			type="Box_NATO_Uniforms_F";
+			atlOffset=0.22388268;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""U_B_Wetsuit"",""U_B_CBRN_Suit_01_MTP_F"",""V_PlateCarrier1_rgr_noflag_F"",""V_PlateCarrier2_rgr_noflag_F"",""H_HelmetB"",""G_Combat"",""V_RebreatherB"",""U_B_GhillieSuit"",""U_B_FullGhillie_lsh"",""U_B_FullGhillie_sard"",""U_B_FullGhillie_ard"",""U_B_T_FullGhillie_tna_F"",""G_AirPurifyingRespirator_01_F"",""G_B_Diving""],[12,12,12,12,12,12,12,12,3,3,3,3,12,12]],[[""B_AssaultPack_rgr""],[12]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26762.986,21.375782,24638.012};
+				angles[]={-0,5.4967098,6.2820935};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=505;
+			type="Box_NATO_Ammo_F";
+			atlOffset=0.46071434;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""30Rnd_556x45_Stanag_red"",""1Rnd_HE_Grenade_shell"",""UGL_FlareWhite_F"",""UGL_FlareRed_F"",""UGL_FlareCIR_F"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""150Rnd_556x45_Drum_Mag_F"",""130Rnd_338_Mag"",""200Rnd_556x45_Box_Red_F"",""10Rnd_762x54_Mag"",""20Rnd_762x51_Mag"",""10Rnd_Mk14_762x51_Mag"",""10Rnd_338_Mag"",""Titan_AA"",""Titan_AT"",""Titan_AP"",""MRAWS_HEAT_F"",""MRAWS_HE_F"",""MRAWS_HEAT55_F"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellOrange"",""B_IR_Grenade"",""DemoCharge_Remote_Mag"",""SatchelCharge_Remote_Mag"",""ATMine_Range_Mag"",""ClaymoreDirectionalMine_Remote_Mag"",""APERSMine_Range_Mag"",""APERSMineDispenser_Mag"",""TrainingMine_Mag""],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item52
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26763.691,21.504923,24637.309};
+				angles[]={-0,0.78508693,6.2820935};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=506;
+			type="Box_NATO_Equip_F";
+			atlOffset=0.031923294;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_SDAR_F"",""arifle_SPAR_01_blk_F"",""arifle_SPAR_01_GL_blk_F"",""LMG_03_Vehicle_F"",""MMG_02_black_F"",""arifle_SPAR_02_blk_F"",""srifle_DMR_02_F"",""srifle_DMR_03_F"",""arifle_SPAR_03_blk_F"",""srifle_DMR_06_hunter_F"",""launch_I_Titan_short_F"",""launch_MRAWS_green_rail_F"",""launch_B_Titan_olive_F""],[12,8,4,2,2,2,2,2,2,2,2,2,2]],[[],[]],[[""muzzle_snds_M"",""muzzle_snds_B"",""optic_Aco"",""optic_SOS"",""optic_LRPS"",""muzzle_snds_338_black"",""bipod_01_F_blk"",""optic_ERCO_blk_F"",""acc_esd_01_flashlight"",""ChemicalDetector_01_black_F"",""muzzle_antenna_01_f"",""muzzle_antenna_02_f"",""muzzle_antenna_03_f""],[12,12,12,4,4,4,6,4,2,2,2,2,2]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item53
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26765.105,21.631319,24635.895};
+				angles[]={-0,0.78508693,6.2820935};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=507;
+			type="Box_NATO_Equip_F";
+			atlOffset=0.15993881;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[""B_Parachute"",""B_CombinationUnitRespirator_01_F"",""B_SCBA_01_F"",""B_RadioBag_01_mtp_F""],[12,12,12,4]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item54
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26766.52,21.757626,24634.48};
+				angles[]={0,0.78508693,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=513;
+			type="Box_NATO_Uniforms_F";
+			atlOffset=0.28786469;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""U_B_CTRG_1"",""U_B_CombatUniform_mcam""],[12,12]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item55
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15306.003,17.870846,17458.998};
+				angles[]={6.2805333,2.3555999,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=514;
+			type="Box_NATO_Equip_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""Binocular"",""Rangefinder"",""Laserdesignator_02"",""ItemGPS"",""MineDetector"",""ChemicalDetector_01_watch_F"",""NVGoggles_OPFOR"",""O_UavTerminal""],[6,4,4,2,4,6,12,4]],[[""O_HMG_01_support_F"",""O_HMG_01_weapon_F"",""O_GMG_01_weapon_F"",""O_Mortar_01_support_F"",""O_Mortar_01_weapon_F"",""O_UAV_01_backpack_F"",""O_Static_Designator_02_weapon_F"",""O_UAV_06_backpack_F"",""O_UGV_02_Science_backpack_F"",""O_UGV_02_Demining_backpack_F"",""B_RadioBag_01_hex_F""],[4,2,2,2,2,1,2,1,1,1,4]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item56
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15304.586,17.878403,17457.582};
+				angles[]={6.2805333,2.3555999,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=515;
+			type="Box_NATO_Uniforms_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""U_O_GhillieSuit"",""U_O_Wetsuit"",""U_O_FullGhillie_lsh"",""U_O_FullGhillie_sard"",""U_O_FullGhillie_ard"",""U_O_T_FullGhillie_tna_F"",""G_Lowprofile"",""G_O_Diving"",""G_AirPurifyingRespirator_02_black_F"",""V_RebreatherIR"",""V_PlateCarrier2_blk"",""V_PlateCarrier1_blk"",""H_HelmetB_light_black""],[12,12,3,3,3,3,12,12,12,12,12,12,12]],[[""B_AssaultPack_cbr""],[12]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item57
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15307.414,17.76561,17460.41};
+				angles[]={6.2805333,0.78480381,6.2778587};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=516;
+			type="Box_NATO_Ammo_F";
+			atlOffset=3.8146973e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""1Rnd_HE_Grenade_shell"",""UGL_FlareWhite_F"",""UGL_FlareRed_F"",""UGL_FlareCIR_F"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""Titan_AA"",""Titan_AT"",""Titan_AP"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellRed"",""SmokeShellOrange"",""DemoCharge_Remote_Mag"",""SatchelCharge_Remote_Mag"",""ATMine_Range_Mag"",""ClaymoreDirectionalMine_Remote_Mag"",""APERSMine_Range_Mag"",""APERSMineDispenser_Mag"",""TrainingMine_Mag"",""RPG32_F"",""RPG32_HE_F"",""30Rnd_762x39_AK12_Mag_F"",""30Rnd_762x39_Mag_Green_F"",""75Rnd_762x39_Mag_F"",""75rnd_762x39_AK12_Mag_F"",""150Rnd_93x64_Mag"",""10Rnd_762x54_Mag"",""20Rnd_762x51_Mag"",""10Rnd_Mk14_762x51_Mag"",""10Rnd_93x64_DMR_05_Mag""],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item58
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15306.71,17.867075,17459.705};
+				angles[]={6.2805333,2.3555999,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=517;
+			type="Box_NATO_Equip_F";
+			atlOffset=5.7220459e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_SDAR_F"",""srifle_DMR_06_hunter_F"",""launch_I_Titan_short_F"",""launch_B_Titan_olive_F"",""arifle_AK12_F"",""arifle_AK12_GL_F"",""arifle_RPK12_F"",""arifle_AK12U_F"",""MMG_01_tan_F"",""srifle_DMR_01_F"",""srifle_GM6_F"",""srifle_DMR_05_blk_F"",""launch_RPG32_green_F""],[12,2,2,2,6,4,4,12,2,2,2,2,2]],[[],[]],[[""muzzle_snds_B"",""optic_SOS"",""optic_LRPS"",""optic_Arco_blk_F"",""ChemicalDetector_01_black_F"",""optic_ACO_grn"",""muzzle_snds_93mmg"",""bipod_02_F_blk""],[12,4,4,4,2,12,4,6]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item59
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15305.294,17.87463,17458.291};
+				angles[]={6.2805333,2.3555999,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=518;
+			type="Box_NATO_Equip_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[""B_Parachute"",""B_CombinationUnitRespirator_01_F"",""B_SCBA_01_F"",""B_RadioBag_01_hex_F""],[12,12,12,4]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
