@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=20;
+		nextID=22;
 	};
 	class Camera
 	{
-		pos[]={26886.471,68.240166,24611.906};
-		dir[]={-0.89674425,-0.4413853,-0.032596238};
-		up[]={-0.44109938,0.89731169,-0.01603421};
-		aside[]={-0.036325376,-8.4881776e-008,0.99935579};
+		pos[]={26769.303,22.780561,24639.861};
+		dir[]={-0.28411505,-0.20626606,-0.93638301};
+		up[]={-0.059895303,0.97848529,-0.19740607};
+		aside[]={-0.95695496,-7.803319e-007,0.29035997};
 	};
 };
 binarizationWanted=0;
@@ -35,6 +35,8 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Weapons_F",
 	"A3_Characters_F_Tacops",
+	"A3_Characters_F_Enoch_Headgear",
+	"A3_Characters_F_Exp",
 	"A3_Boat_F_Jets_Carrier_01",
 	"A3_Modules_F_Multiplayer",
 	"A3_Modules_F_Supports",
@@ -46,7 +48,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=11;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -84,26 +86,40 @@ class AddonsMetaData
 		};
 		class Item5
 		{
+			className="A3_Characters_F_Enoch";
+			name="Arma 3 Contact Platform - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
 			className="A3_Boat_F_Jets";
 			name="Arma 3 Jets - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item8
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item9
 		{
 			className="A3_Air_F_EPB";
 			name="Arma 3 Adapt Episode - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item10
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
@@ -114,8 +130,9 @@ class AddonsMetaData
 };
 dlcs[]=
 {
-	"Jets",
-	"Expansion"
+	"Enoch",
+	"Expansion",
+	"Jets"
 };
 randomSeed=9204396;
 class ScenarioData
@@ -10292,14 +10309,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=152;
@@ -10366,14 +10383,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=153;
@@ -10440,14 +10457,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=154;
@@ -10514,14 +10531,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=155;
@@ -10589,14 +10606,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=156;
@@ -10664,14 +10681,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=157;
@@ -10739,14 +10756,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=158;
@@ -10814,14 +10831,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=159;
@@ -10889,14 +10906,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=160;
@@ -10964,14 +10981,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=161;
@@ -11039,14 +11056,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=162;
@@ -11114,14 +11131,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=163;
@@ -11189,14 +11206,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=164;
@@ -11264,14 +11281,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=165;
@@ -11339,14 +11356,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=166;
@@ -11414,14 +11431,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=167;
@@ -11502,14 +11519,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=329;
@@ -11576,14 +11593,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=330;
@@ -11650,14 +11667,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=331;
@@ -11724,14 +11741,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=332;
@@ -11799,14 +11816,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=333;
@@ -11874,14 +11891,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=334;
@@ -11949,14 +11966,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=335;
@@ -12024,14 +12041,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=336;
@@ -12099,14 +12116,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=337;
@@ -12174,14 +12191,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=338;
@@ -12249,14 +12266,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=339;
@@ -12324,14 +12341,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=340;
@@ -12398,14 +12415,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=341;
@@ -12472,14 +12489,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=342;
@@ -12546,14 +12563,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=343;
@@ -12620,14 +12637,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=344;
@@ -12707,14 +12724,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=346;
@@ -12781,14 +12798,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=347;
@@ -12855,14 +12872,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=348;
@@ -12929,14 +12946,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=349;
@@ -13004,14 +13021,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=350;
@@ -13079,14 +13096,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=351;
@@ -13154,14 +13171,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=352;
@@ -13229,14 +13246,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=353;
@@ -13304,14 +13321,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=354;
@@ -13379,14 +13396,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=355;
@@ -13454,14 +13471,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=356;
@@ -13529,14 +13546,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=357;
@@ -13604,14 +13621,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=358;
@@ -13679,14 +13696,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=359;
@@ -13754,14 +13771,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=360;
@@ -13829,14 +13846,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=361;
@@ -13917,14 +13934,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=363;
@@ -13991,14 +14008,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=364;
@@ -14065,14 +14082,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=365;
@@ -14140,14 +14157,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=366;
@@ -14215,14 +14232,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=367;
@@ -14290,14 +14307,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=368;
@@ -14365,14 +14382,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=369;
@@ -14440,14 +14457,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=370;
@@ -14515,14 +14532,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=371;
@@ -14590,14 +14607,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=372;
@@ -14665,14 +14682,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=373;
@@ -14740,14 +14757,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=374;
@@ -14815,14 +14832,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=375;
@@ -14890,14 +14907,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=376;
@@ -14965,14 +14982,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=377;
@@ -15040,14 +15057,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=378;
@@ -15128,14 +15145,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=380;
@@ -15202,14 +15219,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=381;
@@ -15276,14 +15293,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=382;
@@ -15350,14 +15367,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=383;
@@ -15425,14 +15442,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=384;
@@ -15500,14 +15517,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=385;
@@ -15575,14 +15592,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=386;
@@ -15650,14 +15667,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=387;
@@ -15725,14 +15742,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=388;
@@ -15800,14 +15817,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=389;
@@ -15875,14 +15892,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=390;
@@ -15950,14 +15967,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=391;
@@ -16025,14 +16042,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=392;
@@ -16100,14 +16117,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=393;
@@ -16175,14 +16192,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=394;
@@ -16250,14 +16267,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=395;
@@ -16338,14 +16355,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=397;
@@ -16412,14 +16429,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=398;
@@ -16486,14 +16503,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=399;
@@ -16560,14 +16577,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=400;
@@ -16635,14 +16652,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=401;
@@ -16710,14 +16727,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=402;
@@ -16785,14 +16802,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=403;
@@ -16860,14 +16877,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=404;
@@ -16935,14 +16952,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=405;
@@ -17010,14 +17027,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=406;
@@ -17085,14 +17102,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=407;
@@ -17160,14 +17177,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=408;
@@ -17235,14 +17252,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=409;
@@ -17310,14 +17327,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=410;
@@ -17385,14 +17402,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=411;
@@ -17460,14 +17477,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=412;
@@ -17548,14 +17565,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=414;
@@ -17622,14 +17639,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=415;
@@ -17696,14 +17713,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=416;
@@ -17770,14 +17787,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=417;
@@ -17845,14 +17862,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=418;
@@ -17920,14 +17937,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=419;
@@ -17995,14 +18012,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=420;
@@ -18070,14 +18087,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=421;
@@ -18145,14 +18162,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=422;
@@ -18220,14 +18237,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=423;
@@ -18295,14 +18312,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=424;
@@ -18370,14 +18387,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=425;
@@ -18445,14 +18462,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=426;
@@ -18520,14 +18537,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=427;
@@ -18595,14 +18612,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=428;
@@ -18670,14 +18687,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=429;
@@ -18758,14 +18775,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=431;
@@ -18832,14 +18849,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=432;
@@ -18906,14 +18923,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=433;
@@ -18980,14 +18997,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=434;
@@ -19055,14 +19072,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=435;
@@ -19130,14 +19147,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=436;
@@ -19205,14 +19222,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=437;
@@ -19280,14 +19297,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=438;
@@ -19355,14 +19372,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=439;
@@ -19430,14 +19447,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=440;
@@ -19505,14 +19522,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=441;
@@ -19580,14 +19597,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=442;
@@ -19655,14 +19672,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=443;
@@ -19730,14 +19747,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=444;
@@ -19805,14 +19822,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=445;
@@ -19880,14 +19897,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=446;
@@ -19968,14 +19985,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=448;
@@ -20042,14 +20059,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=449;
@@ -20116,14 +20133,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=450;
@@ -20190,14 +20207,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=451;
@@ -20265,14 +20282,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=452;
@@ -20340,14 +20357,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=453;
@@ -20415,14 +20432,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=454;
@@ -20490,14 +20507,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=455;
@@ -20565,14 +20582,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=456;
@@ -20640,14 +20657,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=457;
@@ -20715,14 +20732,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=458;
@@ -20790,14 +20807,14 @@ class Mission
 								{
 									class uniform
 									{
-										typeName="U_B_CombatUniform_mcam";
+										typeName="U_B_CTRG_Soldier_urb_1_F";
 										isBackpack=0;
 									};
 									map="ItemMap";
 									compass="ItemCompass";
 									watch="ItemWatch";
 									radio="ItemRadio";
-									headgear="H_MilCap_mcamo";
+									headgear="H_MilCap_grn";
 								};
 							};
 							id=459;
@@ -21108,14 +21125,14 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_B_CombatUniform_mcam";
+								typeName="U_B_CTRG_Soldier_urb_1_F";
 								isBackpack=0;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
-							headgear="H_MilCap_mcamo";
+							headgear="H_MilCap_grn";
 						};
 					};
 					id=460;
@@ -21183,14 +21200,14 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_B_CombatUniform_mcam";
+								typeName="U_B_CTRG_Soldier_urb_1_F";
 								isBackpack=0;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
-							headgear="H_MilCap_mcamo";
+							headgear="H_MilCap_grn";
 						};
 					};
 					id=461;
@@ -21258,14 +21275,14 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_B_CombatUniform_mcam";
+								typeName="U_B_CTRG_Soldier_urb_1_F";
 								isBackpack=0;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
-							headgear="H_MilCap_mcamo";
+							headgear="H_MilCap_grn";
 						};
 					};
 					id=462;
@@ -21333,14 +21350,14 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_B_CombatUniform_mcam";
+								typeName="U_B_CTRG_Soldier_urb_1_F";
 								isBackpack=0;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
-							headgear="H_MilCap_mcamo";
+							headgear="H_MilCap_grn";
 						};
 					};
 					id=463;
@@ -21419,14 +21436,14 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_B_CombatUniform_mcam";
+								typeName="U_B_CTRG_Soldier_urb_1_F";
 								isBackpack=0;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
-							headgear="H_MilCap_mcamo";
+							headgear="H_MilCap_grn";
 						};
 					};
 					id=469;
@@ -23653,7 +23670,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26764.398,21.568058,24636.602};
+				position[]={26764,21.472647,24637};
 				angles[]={-0,0.78508693,6.2820935};
 			};
 			side="Empty";
@@ -23663,7 +23680,6 @@ class Mission
 			};
 			id=503;
 			type="Box_NATO_Equip_F";
-			atlOffset=0.095869064;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23693,7 +23709,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26765.813,21.694452,24635.188};
+				position[]={26766,21.470356,24635};
 				angles[]={-0,0.78508693,6.2820935};
 			};
 			side="Empty";
@@ -23703,7 +23719,6 @@ class Mission
 			};
 			id=504;
 			type="Box_NATO_Uniforms_F";
-			atlOffset=0.22388268;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23733,16 +23748,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26762.986,21.375782,24638.012};
+				position[]={26762,21.37746,24639};
 				angles[]={-0,5.4967098,6.2820935};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=505;
 			type="Box_NATO_Ammo_F";
-			atlOffset=0.46071434;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23772,7 +23787,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26763.691,21.504923,24637.309};
+				position[]={26763,21.473791,24638};
 				angles[]={-0,0.78508693,6.2820935};
 			};
 			side="Empty";
@@ -23782,7 +23797,6 @@ class Mission
 			};
 			id=506;
 			type="Box_NATO_Equip_F";
-			atlOffset=0.031923294;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23812,7 +23826,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26765.105,21.631319,24635.895};
+				position[]={26765,21.4715,24636};
 				angles[]={-0,0.78508693,6.2820935};
 			};
 			side="Empty";
@@ -23822,7 +23836,6 @@ class Mission
 			};
 			id=507;
 			type="Box_NATO_Equip_F";
-			atlOffset=0.15993881;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23852,16 +23865,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26766.52,21.757626,24634.48};
-				angles[]={0,0.78508693,0};
+				position[]={26767,21.46921,24634};
+				angles[]={-0,0.78508693,6.2820935};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=513;
 			type="Box_NATO_Uniforms_F";
-			atlOffset=0.28786469;
 			class CustomAttributes
 			{
 				class Attribute0

@@ -13,7 +13,7 @@ _SetChannel = SetCurrentChannel 5;
 5 EnableChannel True; //Direct
 
 //Equip player appropriately.
-Call ASG_FNC_SOFGear;
+//Disabled for development. Call ASG_FNC_SOFGear;
 
 //Tag gear for respawn.
 Player setVariable ["TAG_LoadoutStart", getUnitLoadout player];
