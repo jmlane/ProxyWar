@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=549;
+	toggles=677;
 	class ItemIDProvider
 	{
 		nextID=519;
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={26769.303,22.780561,24639.861};
-		dir[]={-0.28411505,-0.20626606,-0.93638301};
-		up[]={-0.059895303,0.97848529,-0.19740607};
-		aside[]={-0.95695496,-7.803319e-007,0.29035997};
+		pos[]={15278.374,40.834507,17448.258};
+		dir[]={0.90860677,-0.17679054,0.37842461};
+		up[]={0.16321224,0.98424518,0.067975506};
+		aside[]={0.38448051,-2.8231443e-007,-0.92314565};
 	};
 };
 binarizationWanted=0;
@@ -23670,8 +23670,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26764,21.472647,24637};
-				angles[]={-0,0.78508693,6.2820935};
+				position[]={26764,21.472746,24637};
+				angles[]={0,0.78508395,6.2820859};
 			};
 			side="Empty";
 			flags=4;
@@ -23680,6 +23680,7 @@ class Mission
 			};
 			id=503;
 			type="Box_NATO_Equip_F";
+			atlOffset=9.9182129e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23697,7 +23698,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""Binocular"",""Rangefinder"",""Laserdesignator_03"",""ItemGPS"",""MineDetector"",""ChemicalDetector_01_watch_F"",""B_UavTerminal"",""NVGoggles_INDEP""],[6,4,4,2,4,6,4,12]],[[""B_HMG_01_support_F"",""B_HMG_01_weapon_F"",""B_GMG_01_weapon_F"",""B_Mortar_01_support_F"",""B_Mortar_01_weapon_F"",""B_Static_Designator_01_weapon_F"",""B_RadioBag_01_mtp_F"",""B_UAV_01_backpack_F"",""B_UAV_06_backpack_F"",""B_UGV_02_Science_backpack_F"",""B_UGV_02_Demining_backpack_F""],[4,2,2,2,2,2,4,1,1,1,1]]],false]";
+							value="[[[[],[]],[[],[]],[[""Binocular"",""Rangefinder"",""Laserdesignator_03"",""ItemGPS"",""MineDetector"",""ChemicalDetector_01_watch_F"",""B_UavTerminal"",""NVGoggles_INDEP"",""FirstAidKit"",""Medikit"",""ToolKit""],[6,4,4,2,4,6,4,12,24,2,2]],[[""B_HMG_01_support_F"",""B_HMG_01_weapon_F"",""B_GMG_01_weapon_F"",""B_Mortar_01_support_F"",""B_Mortar_01_weapon_F"",""B_Static_Designator_01_weapon_F"",""B_RadioBag_01_mtp_F"",""B_UAV_01_backpack_F"",""B_UAV_06_backpack_F"",""B_UGV_02_Science_backpack_F"",""B_UGV_02_Demining_backpack_F""],[4,2,2,2,2,2,4,1,1,1,1]]],false]";
 						};
 					};
 				};
@@ -23905,7 +23906,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15306.003,17.870846,17458.998};
-				angles[]={6.2805333,2.3555999,6.2751846};
+				angles[]={6.2805324,2.3556011,6.2751913};
 			};
 			side="Empty";
 			flags=4;
@@ -23931,7 +23932,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""Binocular"",""Rangefinder"",""Laserdesignator_02"",""ItemGPS"",""MineDetector"",""ChemicalDetector_01_watch_F"",""NVGoggles_OPFOR"",""O_UavTerminal""],[6,4,4,2,4,6,12,4]],[[""O_HMG_01_support_F"",""O_HMG_01_weapon_F"",""O_GMG_01_weapon_F"",""O_Mortar_01_support_F"",""O_Mortar_01_weapon_F"",""O_UAV_01_backpack_F"",""O_Static_Designator_02_weapon_F"",""O_UAV_06_backpack_F"",""O_UGV_02_Science_backpack_F"",""O_UGV_02_Demining_backpack_F"",""B_RadioBag_01_hex_F""],[4,2,2,2,2,1,2,1,1,1,4]]],false]";
+							value="[[[[],[]],[[],[]],[[""Binocular"",""Rangefinder"",""Laserdesignator_02"",""ItemGPS"",""MineDetector"",""ChemicalDetector_01_watch_F"",""NVGoggles_OPFOR"",""O_UavTerminal"",""FirstAidKit"",""Medikit"",""ToolKit""],[6,4,4,2,4,6,12,4,24,2,2]],[[""O_HMG_01_support_F"",""O_HMG_01_weapon_F"",""O_GMG_01_weapon_F"",""O_Mortar_01_support_F"",""O_Mortar_01_weapon_F"",""O_UAV_01_backpack_F"",""O_Static_Designator_02_weapon_F"",""O_UAV_06_backpack_F"",""O_UGV_02_Science_backpack_F"",""O_UGV_02_Demining_backpack_F""],[4,2,2,2,2,1,2,1,1,1]]],false]";
 						};
 					};
 				};
