@@ -950,4 +950,316 @@ If (isServer) then {
 			PublicVariable 'BluZones';
 		},""
 	];
+	
+	//Sector_25
+	'Sector_25' setMarkerType 'hd_objective_noShadow';
+
+	//RedTrigger_25
+	_SectorAAF_25 = createTrigger ["EmptyDetector", markerPos "Sector_25", false];
+	_SectorAAF_25 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorAAF_25 setTriggerArea [100, 100, getDir this, false];
+	_SectorAAF_25 setTriggerInterval 60;
+	_SectorAAF_25 setTriggerStatements [
+        toString {West countSide thisList < 0.4*(East countSide thisList);},
+        toString {
+			If (markerType 'Sector_25'== 'Flag_FIA') then {
+				BluZones = BluZones - 1;
+				PublicVariable 'BluZones';
+			};
+			'Sector_25' setMarkerType 'Flag_Altis';
+			RedZones = RedZones + 1;
+			PublicVariable 'RedZones';
+		},""
+	];
+
+	//BlueTrigger_25
+	_SectorFIA_25 = createTrigger ["EmptyDetector", markerPos "Sector_25", false];
+	_SectorFIA_25 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorFIA_25 setTriggerArea [100, 100, getDir this, false];
+	_SectorFIA_25 setTriggerInterval 60;
+	_SectorFIA_25 setTriggerStatements [
+        toString {East countSide thisList < 0.4*(West countSide thisList);},
+        toString {
+			If (markerType 'Sector_25'== 'Flag_Altis') then {
+				RedZones = RedZones - 1;
+				PublicVariable 'RedZones';
+			};
+			'Sector_25' setMarkerType 'Flag_FIA';
+			BluZones = BluZones + 1;
+			PublicVariable 'BluZones';
+		},""
+	];
+	
+	//Sector_26
+	'Sector_26' setMarkerType 'hd_objective_noShadow';
+
+	//RedTrigger_26
+	_SectorAAF_26 = createTrigger ["EmptyDetector", markerPos "Sector_26", false];
+	_SectorAAF_26 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorAAF_26 setTriggerArea [100, 100, getDir this, false];
+	_SectorAAF_26 setTriggerInterval 60;
+	_SectorAAF_26 setTriggerStatements [
+        toString {West countSide thisList < 0.4*(East countSide thisList);},
+        toString {
+			If (markerType 'Sector_26'== 'Flag_FIA') then {
+				BluZones = BluZones - 1;
+				PublicVariable 'BluZones';
+			};
+			'Sector_26' setMarkerType 'Flag_Altis';
+			RedZones = RedZones + 1;
+			PublicVariable 'RedZones';
+		},""
+	];
+
+	//BlueTrigger_26
+	_SectorFIA_26 = createTrigger ["EmptyDetector", markerPos "Sector_26", false];
+	_SectorFIA_26 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorFIA_26 setTriggerArea [100, 100, getDir this, false];
+	_SectorFIA_26 setTriggerInterval 60;
+	_SectorFIA_26 setTriggerStatements [
+        toString {East countSide thisList < 0.4*(West countSide thisList);},
+        toString {
+			If (markerType 'Sector_26'== 'Flag_Altis') then {
+				RedZones = RedZones - 1;
+				PublicVariable 'RedZones';
+			};
+			'Sector_26' setMarkerType 'Flag_FIA';
+			BluZones = BluZones + 1;
+			PublicVariable 'BluZones';
+		},""
+	];
+	
+	//Sector_27
+	'Sector_27' setMarkerType 'hd_objective_noShadow';
+
+	//RedTrigger_27
+	_SectorAAF_27 = createTrigger ["EmptyDetector", markerPos "Sector_27", false];
+	_SectorAAF_27 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorAAF_27 setTriggerArea [100, 100, getDir this, false];
+	_SectorAAF_27 setTriggerInterval 60;
+	_SectorAAF_27 setTriggerStatements [
+        toString {West countSide thisList < 0.4*(East countSide thisList);},
+        toString {
+			If (markerType 'Sector_27'== 'Flag_FIA') then {
+				BluZones = BluZones - 1;
+				PublicVariable 'BluZones';
+			};
+			'Sector_27' setMarkerType 'Flag_Altis';
+			RedZones = RedZones + 1;
+			PublicVariable 'RedZones';
+		},""
+	];
+
+	//BlueTrigger_27
+	_SectorFIA_27 = createTrigger ["EmptyDetector", markerPos "Sector_27", false];
+	_SectorFIA_27 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorFIA_27 setTriggerArea [100, 100, getDir this, false];
+	_SectorFIA_27 setTriggerInterval 60;
+	_SectorFIA_27 setTriggerStatements [
+        toString {East countSide thisList < 0.4*(West countSide thisList);},
+        toString {
+			If (markerType 'Sector_27'== 'Flag_Altis') then {
+				RedZones = RedZones - 1;
+				PublicVariable 'RedZones';
+			};
+			'Sector_27' setMarkerType 'Flag_FIA';
+			BluZones = BluZones + 1;
+			PublicVariable 'BluZones';
+		},""
+	];
+	
+	//Sector_28
+	'Sector_28' setMarkerType 'hd_objective_noShadow';
+
+	//RedTrigger_28
+	_SectorAAF_28 = createTrigger ["EmptyDetector", markerPos "Sector_28", false];
+	_SectorAAF_28 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorAAF_28 setTriggerArea [100, 100, getDir this, false];
+	_SectorAAF_28 setTriggerInterval 60;
+	_SectorAAF_28 setTriggerStatements [
+        toString {West countSide thisList < 0.4*(East countSide thisList);},
+        toString {
+			If (markerType 'Sector_28'== 'Flag_FIA') then {
+				BluZones = BluZones - 1;
+				PublicVariable 'BluZones';
+			};
+			'Sector_28' setMarkerType 'Flag_Altis';
+			RedZones = RedZones + 1;
+			PublicVariable 'RedZones';
+		},""
+	];
+
+	//BlueTrigger_28
+	_SectorFIA_28 = createTrigger ["EmptyDetector", markerPos "Sector_28", false];
+	_SectorFIA_28 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorFIA_28 setTriggerArea [100, 100, getDir this, false];
+	_SectorFIA_28 setTriggerInterval 60;
+	_SectorFIA_28 setTriggerStatements [
+        toString {East countSide thisList < 0.4*(West countSide thisList);},
+        toString {
+			If (markerType 'Sector_28'== 'Flag_Altis') then {
+				RedZones = RedZones - 1;
+				PublicVariable 'RedZones';
+			};
+			'Sector_28' setMarkerType 'Flag_FIA';
+			BluZones = BluZones + 1;
+			PublicVariable 'BluZones';
+		},""
+	];
+	
+	//Sector_29
+	'Sector_29' setMarkerType 'hd_objective_noShadow';
+
+	//RedTrigger_29
+	_SectorAAF_29 = createTrigger ["EmptyDetector", markerPos "Sector_29", false];
+	_SectorAAF_29 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorAAF_29 setTriggerArea [100, 100, getDir this, false];
+	_SectorAAF_29 setTriggerInterval 60;
+	_SectorAAF_29 setTriggerStatements [
+        toString {West countSide thisList < 0.4*(East countSide thisList);},
+        toString {
+			If (markerType 'Sector_29'== 'Flag_FIA') then {
+				BluZones = BluZones - 1;
+				PublicVariable 'BluZones';
+			};
+			'Sector_29' setMarkerType 'Flag_Altis';
+			RedZones = RedZones + 1;
+			PublicVariable 'RedZones';
+		},""
+	];
+
+	//BlueTrigger_29
+	_SectorFIA_29 = createTrigger ["EmptyDetector", markerPos "Sector_29", false];
+	_SectorFIA_29 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorFIA_29 setTriggerArea [100, 100, getDir this, false];
+	_SectorFIA_29 setTriggerInterval 60;
+	_SectorFIA_29 setTriggerStatements [
+        toString {East countSide thisList < 0.4*(West countSide thisList);},
+        toString {
+			If (markerType 'Sector_29'== 'Flag_Altis') then {
+				RedZones = RedZones - 1;
+				PublicVariable 'RedZones';
+			};
+			'Sector_29' setMarkerType 'Flag_FIA';
+			BluZones = BluZones + 1;
+			PublicVariable 'BluZones';
+		},""
+	];
+	
+	//Sector_30
+	'Sector_30' setMarkerType 'hd_objective_noShadow';
+
+	//RedTrigger_30
+	_SectorAAF_30 = createTrigger ["EmptyDetector", markerPos "Sector_30", false];
+	_SectorAAF_30 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorAAF_30 setTriggerArea [100, 100, getDir this, false];
+	_SectorAAF_30 setTriggerInterval 60;
+	_SectorAAF_30 setTriggerStatements [
+        toString {West countSide thisList < 0.4*(East countSide thisList);},
+        toString {
+			If (markerType 'Sector_30'== 'Flag_FIA') then {
+				BluZones = BluZones - 1;
+				PublicVariable 'BluZones';
+			};
+			'Sector_30' setMarkerType 'Flag_Altis';
+			RedZones = RedZones + 1;
+			PublicVariable 'RedZones';
+		},""
+	];
+
+	//BlueTrigger_30
+	_SectorFIA_30 = createTrigger ["EmptyDetector", markerPos "Sector_30", false];
+	_SectorFIA_30 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorFIA_30 setTriggerArea [100, 100, getDir this, false];
+	_SectorFIA_30 setTriggerInterval 60;
+	_SectorFIA_30 setTriggerStatements [
+        toString {East countSide thisList < 0.4*(West countSide thisList);},
+        toString {
+			If (markerType 'Sector_30'== 'Flag_Altis') then {
+				RedZones = RedZones - 1;
+				PublicVariable 'RedZones';
+			};
+			'Sector_30' setMarkerType 'Flag_FIA';
+			BluZones = BluZones + 1;
+			PublicVariable 'BluZones';
+		},""
+	];
+	
+	//Sector_31
+	'Sector_31' setMarkerType 'hd_objective_noShadow';
+
+	//RedTrigger_31
+	_SectorAAF_31 = createTrigger ["EmptyDetector", markerPos "Sector_31", false];
+	_SectorAAF_31 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorAAF_31 setTriggerArea [100, 100, getDir this, false];
+	_SectorAAF_31 setTriggerInterval 60;
+	_SectorAAF_31 setTriggerStatements [
+        toString {West countSide thisList < 0.4*(East countSide thisList);},
+        toString {
+			If (markerType 'Sector_31'== 'Flag_FIA') then {
+				BluZones = BluZones - 1;
+				PublicVariable 'BluZones';
+			};
+			'Sector_31' setMarkerType 'Flag_Altis';
+			RedZones = RedZones + 1;
+			PublicVariable 'RedZones';
+		},""
+	];
+
+	//BlueTrigger_31
+	_SectorFIA_31 = createTrigger ["EmptyDetector", markerPos "Sector_31", false];
+	_SectorFIA_31 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorFIA_31 setTriggerArea [100, 100, getDir this, false];
+	_SectorFIA_31 setTriggerInterval 60;
+	_SectorFIA_31 setTriggerStatements [
+        toString {East countSide thisList < 0.4*(West countSide thisList);},
+        toString {
+			If (markerType 'Sector_31'== 'Flag_Altis') then {
+				RedZones = RedZones - 1;
+				PublicVariable 'RedZones';
+			};
+			'Sector_31' setMarkerType 'Flag_FIA';
+			BluZones = BluZones + 1;
+			PublicVariable 'BluZones';
+		},""
+	];
+	
+	//Sector_32
+	'Sector_32' setMarkerType 'hd_objective_noShadow';
+
+	//RedTrigger_32
+	_SectorAAF_32 = createTrigger ["EmptyDetector", markerPos "Sector_32", false];
+	_SectorAAF_32 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorAAF_32 setTriggerArea [100, 100, getDir this, false];
+	_SectorAAF_32 setTriggerInterval 60;
+	_SectorAAF_32 setTriggerStatements [
+        toString {West countSide thisList < 0.4*(East countSide thisList);},
+        toString {
+			If (markerType 'Sector_32'== 'Flag_FIA') then {
+				BluZones = BluZones - 1;
+				PublicVariable 'BluZones';
+			};
+			'Sector_32' setMarkerType 'Flag_Altis';
+			RedZones = RedZones + 1;
+			PublicVariable 'RedZones';
+		},""
+	];
+
+	//BlueTrigger_32
+	_SectorFIA_32 = createTrigger ["EmptyDetector", markerPos "Sector_32", false];
+	_SectorFIA_32 setTriggerActivation ["ANY", "PRESENT", true];
+	_SectorFIA_32 setTriggerArea [100, 100, getDir this, false];
+	_SectorFIA_32 setTriggerInterval 60;
+	_SectorFIA_32 setTriggerStatements [
+        toString {East countSide thisList < 0.4*(West countSide thisList);},
+        toString {
+			If (markerType 'Sector_32'== 'Flag_Altis') then {
+				RedZones = RedZones - 1;
+				PublicVariable 'RedZones';
+			};
+			'Sector_32' setMarkerType 'Flag_FIA';
+			BluZones = BluZones + 1;
+			PublicVariable 'BluZones';
+		},""
+	];
 };

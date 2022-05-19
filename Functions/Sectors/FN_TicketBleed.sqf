@@ -7,7 +7,7 @@ If (isServer) then {
   };
 
   While {
-    Sleep 3;
+    Sleep 2;
     BluTickets > 0 and RedTickets > 0;
   } do {
       if (RedZones < (0.6 * BluZones)) then {

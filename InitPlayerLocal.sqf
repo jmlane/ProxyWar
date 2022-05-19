@@ -5,6 +5,8 @@ WaitUntil {!isNull player};
 
 //Set to relevant voice channel.
 _SetChannel = SetCurrentChannel 5;
+
+//Disable nuisance channels.
 0 EnableChannel False; //Global
 1 EnableChannel True; //Side
 2 EnableChannel False; //Command
@@ -22,6 +24,10 @@ Player addEventHandler ["Respawn", {player setUnitLoadout (player getVariable ["
 //Initialize client side dynamic group framework.
 ["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 
+//Execute briefing script.
+[] ExecVM "Briefing.sqf";
+
+//Add ferry service.
 If ((playersNumber West < 2) and {side player == West}) then {
 	[player, BLR_1, BLP_1] call BIS_fnc_addSupportLink;
 };

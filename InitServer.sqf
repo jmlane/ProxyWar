@@ -8,10 +8,10 @@ LogicSide = createGroup sideLogic;
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
 //Create ticket pool for score.
-BluTickets = 300;
+BluTickets = 1200;
 PublicVariable "BluTickets";
 
-RedTickets = 300;
+RedTickets = 1200;
 PublicVariable "RedTickets";
 
 //Create sector pool for sector ownership comparison.
