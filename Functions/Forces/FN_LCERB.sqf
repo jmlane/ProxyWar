@@ -387,3 +387,5 @@ _WPRB41 setWaypointType "GetIn";
 
 _WPRB42 = RB42 addWaypoint [RB42V, 0];
 _WPRB42 setWaypointType "GetIn";
+
+[Format ["RB11 is on machine %1.", groupOwner RB11]] remoteExec ["HintSilent", 0];

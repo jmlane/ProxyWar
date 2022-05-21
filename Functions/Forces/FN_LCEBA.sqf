@@ -425,6 +425,28 @@ Sleep 0.2;
 	} foreach units _x;
 } foreach [BA42];
 
+If (!isNull "HC1") then {
+	BA11 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA12 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA13 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA21 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA22 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA23 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA31 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA32 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA41 setGroupOwner (owner HC1);
+	Sleep 0.2;
+	BA42 setGroupOwner (owner HC1);
+};
+
 //Groups mount their vehicles.
 _WPBA11 = BA11 addWaypoint [BA11V, 0];
 _WPBA11 setWaypointType "GetIn";
@@ -457,3 +479,5 @@ _WPBA41 setWaypointType "GetIn";
 
 _WPBA42 = BA42 addWaypoint [BA42V, 0];
 _WPBA42 setWaypointType "GetIn";
+
+[Format ["BA11 is on machine %1.", groupOwner BA11]] remoteExec ["HintSilent", 0];

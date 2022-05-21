@@ -28,7 +28,7 @@ ReviveForceRespawnDelay = 3;
 ReviveBleedOutDelay = 240;
 Saving = 0;
 //Skiplobby = 1; //Disabled for development.
-ShowHUD[] = {1,1,0,0,0,1,1,0,1,0,1};
+ShowHUD[] = {1,1,0,0,0,1,1,1,1,0,1};
 //ShowHUD = {1,2,3,4,5,6,7,8,9,0,1}
 //Disables all HUD except menus, panels, and personal info.
 //Personal info is defined by server difficulty profile.

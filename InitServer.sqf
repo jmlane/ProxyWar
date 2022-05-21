@@ -35,7 +35,23 @@ Sleep 2; //Delay appears to allow the server to more easily construct the scenar
 //Disabled for development. [] Spawn ASG_FNC_BACE;
 Sleep 2;
 
-//Spawn AI. Spawn redfor on HC2, if it exists, else spawn both forces on HC1 if it exists, else spawn forces on the server.
+//Spawn AI. Stall spawns to not shock client frames.
+[] Spawn ASG_FNC_LCEBA;
+[] Spawn ASG_FNC_LCERA;
+Sleep 12;
+
+[] Spawn ASG_FNC_LCEBB;
+[] Spawn ASG_FNC_LCERB;
+Sleep 12;
+
+[] Spawn ASG_FNC_LCEBC;
+[] Spawn ASG_FNC_LCERC;
+Sleep 12;
+
+[] Spawn ASG_FNC_LCEBD;
+[] Spawn ASG_FNC_LCERD;
+
+/*Spawn AI. Spawn redfor on HC2, if it exists, else spawn both forces on HC1 if it exists, else spawn forces on the server.
 If (!isNil "HC1") then {RemoteExec ["ASG_FNC_LCEBA", HC1];} else {[] Spawn ASG_FNC_LCEBA;};
 If (!isNil "HC1") then {If (!isNil "HC2") then {RemoteExec ["ASG_FNC_LCERA", HC2];} else {RemoteExec ["ASG_FNC_LCERA", HC1];};} else {[] Spawn ASG_FNC_LCERA;};
 Sleep 12;
