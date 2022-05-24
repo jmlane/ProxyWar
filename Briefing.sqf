@@ -42,7 +42,7 @@ player createDiaryRecord ["diary", ["Execution","
 Execution
 <br/>
 <br/>
-Securing this territory and the population that occupies it is the ultimate goal.
+Securing this territory its population for our side is the ultimate goal.
 The method is to diminish the enemy's ability to fight, either by constraining their mobility, suppressing their maneuver, or destroying their assets.
 Special operations forces should be utilized to find the enemy and coordinate with high command to fix and fight them.
 All conventional assets, air, artillery, mines, mortars, and more should all be considered as tools SOF can coordinate in the fight.

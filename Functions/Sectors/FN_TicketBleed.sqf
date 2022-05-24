@@ -3,7 +3,7 @@
 
 If (isServer) then {
   WaitUntil {
-    BluZones > 0 and RedZones > 0;
+    BluZones > 4 and RedZones > 4;
   };
 
   While {
