@@ -16,14 +16,14 @@ player createDiaryRecord ["diary", ["High Command","
 High Command
 <br/>
 <br/>
-Alpha through charlie companies each contain eight infantry squads and two tank sections.
+Alpha through charlie companies each contain three light dragoon squads, three medium squads, two tank sections, an air defense squad, and a mortar squad.
 Squads one-one through one-three are mounted in light armored vehicles.
 Squads two-one through two-three are mounted in medium armored vehicles.
 Sections three-one and three-two are comprised of two heavy armored vehicles each.
 Squads four-one and four-two are light infantry, mounted in light trucks, one squad providing anti-air support, the other providing indirect fire support.
 <br/>
 <br/>
-Delta company contains air defense artillery and heavy artillery assets, as well as two platoons of reserve troops (later specialty troops).
+Delta company contains air defense artillery and heavy artillery assets, as well as six squads of light infantry reserve troops (later support troops).
 "]];
 
 // ====================================================================================

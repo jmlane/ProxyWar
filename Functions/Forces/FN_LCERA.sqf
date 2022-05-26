@@ -1,23 +1,7 @@
-/*
+//Local Combat Elements
+//Redfor Alpha
 
-Spawns local combat elements.
-
-Example: RA11 - First squad, first platoon, alpha company, redfor.
-
-B/R - Blufor/Redfor/Opfor.
-A/B/C/D - Company designation (A, B, C, line companies, D Headquarters Company).
-1, 2, 3, 4 - Platoon designation (1, 2, 3, line platoons, 4, weapons/fire support platoon).
-1, 2, 3 - Section or squad designation.
-
-AA/TAA - Assembly Area/Tactical Assembly Area
-RP - Rally Point/Release Point
-ORP - Objective Rally Point
-Vic - Vehicle (Victor)
-
-Typical Load Order - Driver, Commander, Gunner, Passengers.
-Driver must be group leader (at least before Arma 2.0, test required).
-*/
-
+//Create redfor rally points for alpha squads.
 _RRPA11 = RRPA getPos [15, (getDir RRPA) + 090];
 _RRPA12 = RRPA getPos [21, (getDir RRPA) + 135];
 _RRPA13 = RRPA getPos [34, (getDir RRPA) + 154];
@@ -100,93 +84,117 @@ Sleep 0.2;
 Sleep 0.2;
 
 RA11 = [_RRPA11, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F"
+		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_GL_F","O_G_Soldier_GL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_medic_F","O_G_medic_F"
 	],[],[
-		"Private","Sergeant","Corporal",
-		"Sergeant","Private",
-		"Corporal","Private","Private",
-		"Corporal","Private","Private"
+		"Private","Sergeant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RA11 setGroupIDGlobal ["A 1 1"];
 RA11 addVehicle RA11V;
+Units RA11 select 0 moveInDriver RA11V;
+Units RA11 select 1 moveInCommander RA11V;
+Units RA11 select 2 moveInGunner RA11V;
 Sleep 0.2;
 
 RA12 = [_RRPA12, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F"
+		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_LAT2_F","O_G_Soldier_LAT2_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_medic_F","O_G_medic_F"
 	],[],[
-		"Private","Lieutenant","Corporal",
-		"Sergeant","Private",
-		"Corporal","Private","Private",
-		"Corporal","Private","Private"
+		"Private","Lieutenant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RA12 setGroupIDGlobal ["A 1 2"];
 RA12 addVehicle RA12V;
+Units RA12 select 0 moveInDriver RA12V;
+Units RA12 select 1 moveInCommander RA12V;
+Units RA12 select 2 moveInGunner RA12V;
 Sleep 0.2;
 
 RA13 = [_RRPA13, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F"
+		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_GL_F","O_G_Soldier_GL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_medic_F","O_G_medic_F"
 	],[],[
-		"Private","Sergeant","Corporal",
-		"Sergeant","Private",
-		"Corporal","Private","Private",
-		"Corporal","Private","Private"
+		"Private","Sergeant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RA13 setGroupIDGlobal ["A 1 3"];
 RA13 addVehicle RA13V;
+Units RA13 select 0 moveInDriver RA13V;
+Units RA13 select 1 moveInCommander RA13V;
+Units RA13 select 2 moveInGunner RA13V;
 Sleep 0.2;
 
 RA21 = [_RRPA21, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_SL_F",
-		"O_G_Soldier_TL_F","O_G_medic_F","O_G_Soldier_AR_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F"
+		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_medic_F","O_G_Soldier_GL_F"
 	],[],[
-		"Private","Sergeant","Corporal",
-		"Sergeant",
-		"Corporal","Private","Private",
-		"Corporal","Private","Private"
+		"Private","Sergeant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RA21 setGroupIDGlobal ["A 2 1"];
 RA21 addVehicle RA21V;
+Units RA21 select 0 moveInDriver RA21V;
+Units RA21 select 1 moveInCommander RA21V;
+Units RA21 select 2 moveInGunner RA21V;
 Sleep 0.2;
 
 RA22 = [_RRPA22, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_SL_F",
-		"O_G_Soldier_TL_F","O_G_medic_F","O_G_Soldier_AR_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F"
+		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_medic_F","O_G_Soldier_LAT2_F"
 	],[],[
-		"Private","Lieutenant","Corporal",
-		"Sergeant",
-		"Corporal","Private","Private",
-		"Corporal","Private","Private"
+		"Private","Lieutenant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RA22 setGroupIDGlobal ["A 2 2"];
 RA22 addVehicle RA22V;
+Units RA22 select 0 moveInDriver RA22V;
+Units RA22 select 1 moveInCommander RA22V;
+Units RA22 select 2 moveInGunner RA22V;
 Sleep 0.2;
 
 RA23 = [_RRPA23, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_SL_F",
-		"O_G_Soldier_TL_F","O_G_medic_F","O_G_Soldier_AR_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_AR_F"
+		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_Soldier_GL_F","O_G_medic_F"
 	],[],[
-		"Private","Sergeant","Corporal",
-		"Sergeant",
-		"Corporal","Private","Private",
-		"Corporal","Private","Private"
+		"Private","Sergeant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RA23 setGroupIDGlobal ["A 2 3"];
 RA23 addVehicle RA23V;
+Units RA23 select 0 moveInDriver RA23V;
+Units RA23 select 1 moveInCommander RA23V;
+Units RA23 select 2 moveInGunner RA23V;
 Sleep 0.2;
 
 RA31 = [_RRPA31A, EAST, [
@@ -214,31 +222,37 @@ RA32 addVehicle RA32VB;
 Sleep 0.2;
 
 RA41 = [_RRPA41, EAST, [
-		"O_G_officer_F","O_G_engineer_F",
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_TL_F","O_G_Soldier_LAT_F","O_G_Soldier_LAT_F",
-		"O_G_Soldier_LAT2_F","O_G_Soldier_LAT2_F","O_G_Soldier_lite_F","O_G_Soldier_lite_F"
+		"O_G_officer_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_LAT_F","O_G_Soldier_LAT_F",
+		"O_G_Soldier_LAT2_F","O_G_Soldier_LAT2_F",
+		"O_G_Soldier_lite_F","O_G_Soldier_lite_F",
+		"O_G_medic_F","O_G_engineer_F"
 	],[],[
-		"Lieutenant","Private",
-		"Sergeant","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Lieutenant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RA41 setGroupIDGlobal ["A 4 1"];
 RA41 addVehicle RA41V;
 Sleep 0.2;
 
 RA42 = [_RRPA42, EAST, [
-		"O_G_officer_F","O_G_engineer_F",
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_LAT_F","O_G_Soldier_LAT2_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_LAT_F","O_G_Soldier_LAT2_F",
+		"O_G_officer_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_LAT2_F","O_G_Soldier_LAT2_F",
+		"O_G_Soldier_lite_F","O_G_Soldier_lite_F",
+		"O_G_engineer_F","O_G_medic_F",
 		"O_G_Soldier_F","O_G_Soldier_F"
 	],[],[
-		"Sergeant","Private",
-		"Sergeant","Private",
-		"Corporal","Private","Private",
-		"Corporal","Private","Private",
+		"Lieutenant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
 		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RA42 setGroupIDGlobal ["A 4 2"];
@@ -385,3 +399,14 @@ _WPRA41 setWaypointType "GetIn";
 
 _WPRA42 = RA42 addWaypoint [RA42V, 0];
 _WPRA42 setWaypointType "GetIn";
+
+PublicVariable "RA11";
+PublicVariable "RA12";
+PublicVariable "RA13";
+PublicVariable "RA21";
+PublicVariable "RA22";
+PublicVariable "RA23";
+PublicVariable "RA31";
+PublicVariable "RA32";
+PublicVariable "RA41";
+PublicVariable "RA42";

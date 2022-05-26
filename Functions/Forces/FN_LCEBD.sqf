@@ -1,22 +1,7 @@
-/*
-Spawns local combat elements.
+//Local Combat Elements
+//Blufor Delta
 
-Example: BD11 - First squad, first platoon, delta company, blufor.
-
-B/R - Blufor/Redfor/Opfor.
-A/B/C/D - Company designation (A, B, C, line companies, D Headquarters Company).
-1, 2, 3, 4 - Platoon designation (1, 2, 3, line platoons, 4, weapons/fire support platoon).
-1, 2, 3 - Section or squad designation.
-
-AA/TAA - Assembly Area/Tactical Assembly Area
-RP - Rally Point/Release Point
-ORP - Objective Rally Point
-Vic - Vehicle (Victor)
-
-Typical Load Order - Driver, Commander, Gunner, Passengers.
-Driver must be group leader (at least before Arma 2.0, test required).
-*/
-
+//Create blufor rally points for delta squads.
 _BRPD11 = BRPD getPos [34, (getDir BRPD) + 064];
 _BRPD12 = BRPD getPos [30, (getDir BRPD) + 090];
 _BRPD13 = BRPD getPos [34, (getDir BRPD) + 116];
@@ -36,6 +21,7 @@ _BRPD42A = BRPD getPos [47, (getDir BRPD) + 288];
 _BRPD42B = BRPD getPos [45, (getDir BRPD) + 270];
 _BRPD42C = BRPD getPos [47, (getDir BRPD) + 252];
 
+//Delta Vehicles
 BD11V = "I_E_Truck_02_F" createVehicle _BRPD11;
 BD11V setDir (direction BRPD);
 Sleep 0.2;
@@ -116,100 +102,139 @@ Sleep 0.2;
 } foreach [BD11V, BD12V, BD13V, BD21V, BD22V, BD23V, BD31VA, BD31VB, BD31VC, BD32VA, BD32VB, BD32VC, BD41VA, BD41VB, BD41VC, BD42VA, BD42VB, BD42VC];
 Sleep 0.2;
 
+//First Platoon (Light)
 BD11 = [_BRPD11, WEST, [
-		"B_G_Soldier_SL_F","B_G_medic_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_LAT_F","B_G_Soldier_LAT2_F","B_G_Soldier_lite_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_TL_F","B_G_Soldier_GL_F","B_G_Soldier_GL_F",
-		"B_G_Soldier_AR_F","B_G_Soldier_AR_F","B_G_Soldier_F","B_G_Soldier_F"
+		"B_G_Soldier_SL_F","B_G_Soldier_TL_F",	//Point/Right
+		"B_G_Soldier_TL_F","B_G_Soldier_TL_F",	//Left/Right
+		"B_G_Soldier_LAT_F","B_G_Soldier_LAT2_F",
+		"B_G_medic_F","B_G_medic_F",
+		"B_G_Soldier_GL_F","B_G_Soldier_GL_F",
+		"B_G_Soldier_AR_F","B_G_Soldier_AR_F",
+		"B_G_engineer_F","B_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Corporal","Private","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Sergeant","Corporal",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 BD11 setGroupIDGlobal ["D 1 1"];
 BD11 addVehicle BD11V;
 Sleep 0.2;
 
 BD12 = [_BRPD12, WEST, [
-		"B_G_Soldier_SL_F","B_G_medic_F",
-		"B_G_officer_F","B_G_officer_F","B_G_engineer_F","B_G_engineer_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_TL_F","B_G_Soldier_GL_F","B_G_Soldier_GL_F",
-		"B_G_Soldier_AR_F","B_G_Soldier_AR_F","B_G_Soldier_F","B_G_Soldier_F"
+		"B_G_officer_F","B_G_officer_F",
+		"B_G_Soldier_SL_F","B_G_Soldier_SL_F",
+		"B_G_Soldier_TL_F","B_G_Soldier_TL_F",
+		"B_G_Soldier_GL_F","B_G_Soldier_GL_F",
+		"B_G_medic_F","B_G_medic_F",
+		"B_G_Soldier_AR_F","B_G_Soldier_AR_F",
+		"B_G_engineer_F","B_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Lieutenant","Sergeant","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Lieutenant","Sergeant",
+		"Sergeant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 BD12 setGroupIDGlobal ["D 1 2"];
 BD12 addVehicle BD12V;
 Sleep 0.2;
 
 BD13 = [_BRPD13, WEST, [
-		"B_G_Soldier_SL_F","B_G_medic_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_LAT_F","B_G_Soldier_LAT2_F","B_G_Soldier_lite_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_TL_F","B_G_Soldier_GL_F","B_G_Soldier_GL_F",
-		"B_G_Soldier_AR_F","B_G_Soldier_AR_F","B_G_Soldier_F","B_G_Soldier_F"
+		"B_G_Soldier_SL_F","B_G_Soldier_TL_F",
+		"B_G_Soldier_TL_F","B_G_Soldier_TL_F",
+		"B_G_Soldier_LAT2_F","B_G_Soldier_LAT_F",
+		"B_G_medic_F","B_G_medic_F",
+		"B_G_Soldier_GL_F","B_G_Soldier_GL_F",
+		"B_G_Soldier_AR_F","B_G_Soldier_AR_F",
+		"B_G_engineer_F","B_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Corporal","Private","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Sergeant","Corporal",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 BD13 setGroupIDGlobal ["D 1 3"];
 BD13 addVehicle BD13V;
 Sleep 0.2;
 
+//Second Platoon (Light)
 BD21 = [_BRPD21, WEST, [
-		"B_G_Soldier_SL_F","B_G_medic_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_LAT_F","B_G_Soldier_LAT2_F","B_G_Soldier_lite_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_TL_F","B_G_Soldier_GL_F","B_G_Soldier_GL_F",
-		"B_G_Soldier_AR_F","B_G_Soldier_AR_F","B_G_Soldier_F","B_G_Soldier_F"
+		"B_G_Soldier_SL_F","B_G_Soldier_TL_F",
+		"B_G_Soldier_TL_F","B_G_Soldier_TL_F",
+		"B_G_Soldier_LAT_F","B_G_Soldier_LAT2_F",
+		"B_G_medic_F","B_G_medic_F",
+		"B_G_Soldier_GL_F","B_G_Soldier_GL_F",
+		"B_G_Soldier_AR_F","B_G_Soldier_AR_F",
+		"B_G_engineer_F","B_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Corporal","Private","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Sergeant","Corporal",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 BD21 setGroupIDGlobal ["D 2 1"];
 BD21 addVehicle BD21V;
 Sleep 0.2;
 
 BD22 = [_BRPD22, WEST, [
-		"B_G_Soldier_SL_F","B_G_medic_F",
-		"B_G_officer_F","B_G_officer_F","B_G_engineer_F","B_G_engineer_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_TL_F","B_G_Soldier_GL_F","B_G_Soldier_GL_F",
-		"B_G_Soldier_AR_F","B_G_Soldier_AR_F","B_G_Soldier_F","B_G_Soldier_F"
+		"B_G_officer_F","B_G_officer_F",
+		"B_G_Soldier_SL_F","B_G_Soldier_SL_F",
+		"B_G_Soldier_TL_F","B_G_Soldier_TL_F",
+		"B_G_Soldier_GL_F","B_G_Soldier_GL_F",
+		"B_G_medic_F","B_G_medic_F",
+		"B_G_Soldier_AR_F","B_G_Soldier_AR_F",
+		"B_G_engineer_F","B_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Lieutenant","Sergeant","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Lieutenant","Sergeant",
+		"Sergeant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 BD22 setGroupIDGlobal ["D 2 2"];
 BD22 addVehicle BD22V;
 Sleep 0.2;
 
 BD23 = [_BRPD23, WEST, [
-		"B_G_Soldier_SL_F","B_G_medic_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_LAT_F","B_G_Soldier_LAT2_F","B_G_Soldier_lite_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_TL_F","B_G_Soldier_GL_F","B_G_Soldier_GL_F",
-		"B_G_Soldier_AR_F","B_G_Soldier_AR_F","B_G_Soldier_F","B_G_Soldier_F"
+		"B_G_Soldier_SL_F","B_G_Soldier_TL_F",
+		"B_G_Soldier_TL_F","B_G_Soldier_TL_F",
+		"B_G_Soldier_LAT2_F","B_G_Soldier_LAT_F",
+		"B_G_medic_F","B_G_medic_F",
+		"B_G_Soldier_GL_F","B_G_Soldier_GL_F",
+		"B_G_Soldier_AR_F","B_G_Soldier_AR_F",
+		"B_G_engineer_F","B_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Corporal","Private","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Sergeant","Corporal",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 BD23 setGroupIDGlobal ["D 2 3"];
 BD23 addVehicle BD23V;
 Sleep 0.2;
 
+//Third Platoon (Air Defense Artillery)
 BD31 = [_BRPD31A, WEST, [
-		"B_G_Soldier_F","B_G_officer_F","B_G_Soldier_F",
-		"B_G_Soldier_F","B_G_Soldier_SL_F","B_G_Soldier_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_F","B_G_medic_F","B_G_Soldier_F"
+		"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_F",
+		"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_F",
+		"B_G_engineer_F","B_G_engineer_F","B_G_medic_F","B_G_medic_F"
 	],[],[
 		"Private","Lieutenant","Corporal",
 		"Private","Sergeant","Corporal",
@@ -227,12 +252,10 @@ Units BD31 select 4 moveInCommander BD31VB;
 Units BD31 select 5 moveInGunner BD31VB;
 Sleep 0.2;
 
-
-
 BD32 = [_BRPD32A, WEST, [
-		"B_G_Soldier_F","B_G_officer_F","B_G_Soldier_F",
-		"B_G_Soldier_F","B_G_Soldier_SL_F","B_G_Soldier_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_F","B_G_medic_F","B_G_Soldier_F"
+		"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_F",
+		"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_F",
+		"B_G_engineer_F","B_G_engineer_F","B_G_medic_F","B_G_medic_F"
 	],[],[
 		"Private","Sergeant","Corporal",
 		"Private","Sergeant","Corporal",
@@ -250,10 +273,11 @@ Units BD32 select 4 moveInCommander BD32VB;
 Units BD32 select 5 moveInGunner BD32VB;
 Sleep 0.2;
 
+//Fourth Platoon (Field Artillery)
 BD41 = [_BRPD41A, WEST, [
-		"B_G_Soldier_F","B_G_officer_F","B_G_Soldier_F",
-		"B_G_Soldier_F","B_G_Soldier_SL_F","B_G_Soldier_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_F","B_G_medic_F","B_G_Soldier_F"
+		"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_F",
+		"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_F",
+		"B_G_engineer_F","B_G_engineer_F","B_G_medic_F","B_G_medic_F"
 	],[],[
 		"Private","Lieutenant","Corporal",
 		"Private","Sergeant","Corporal",
@@ -272,9 +296,9 @@ Units BD41 select 5 moveInGunner BD41VB;
 Sleep 0.2;
 
 BD42 = [_BRPD42A, WEST, [
-		"B_G_Soldier_F","B_G_officer_F","B_G_Soldier_F",
-		"B_G_Soldier_F","B_G_Soldier_SL_F","B_G_Soldier_F",
-		"B_G_Soldier_TL_F","B_G_Soldier_F","B_G_medic_F","B_G_Soldier_F"
+		"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_F",
+		"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_F",
+		"B_G_engineer_F","B_G_engineer_F","B_G_medic_F","B_G_medic_F"
 	],[],[
 		"Private","Sergeant","Corporal",
 		"Private","Sergeant","Corporal",
@@ -430,3 +454,14 @@ _WPBD41 setWaypointType "GetIn";
 _WPBD42 = BD42 addWaypoint [BD42VA, 0];
 _WPBD42 setWaypointFormation  "File";
 _WPBD42 setWaypointType "GetIn";
+
+PublicVariable "BD11";
+PublicVariable "BD12";
+PublicVariable "BD13";
+PublicVariable "BD21";
+PublicVariable "BD22";
+PublicVariable "BD23";
+PublicVariable "BD31";
+PublicVariable "BD32";
+PublicVariable "BD41";
+PublicVariable "BD42";

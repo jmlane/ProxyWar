@@ -1,22 +1,7 @@
-/*
-Spawns local combat elements.
+//Local Combat Elements
+//Redfor Delta
 
-Example: BA11 - First squad, first platoon, Alpha company, blufor.
-
-B/R - Blufor/Redfor/Opfor.
-A/B/C/D - Company designation (A, B, C, line companies, D Headquarters Company).
-1, 2, 3, 4 - Platoon designation (1, 2, 3, line platoons, 4, weapons/fire support platoon).
-1, 2, 3 - Section or squad designation.
-
-AA/TAA - Assembly Area/Tactical Assembly Area
-RP - Rally Point/Release Point
-ORP - Objective Rally Point
-Vic - Vehicle (Victor)
-
-Typical Load Order - Driver, Commander, Gunner, Passengers.
-Driver must be group leader (at least before Arma 2.0, test required).
-*/
-
+//Create redfor rally points for delta squads.
 _RRPD11 = RRPD getPos [34, (getDir RRPD) + 064];
 _RRPD12 = RRPD getPos [30, (getDir RRPD) + 090];
 _RRPD13 = RRPD getPos [34, (getDir RRPD) + 116];
@@ -117,99 +102,135 @@ Sleep 0.2;
 Sleep 0.2;
 
 RD11 = [_RRPD11, EAST, [
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_LAT_F","O_G_Soldier_LAT2_F","O_G_Soldier_lite_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_GL_F",
-		"O_G_Soldier_AR_F","O_G_Soldier_AR_F","O_G_Soldier_F","O_G_Soldier_F"
+		"O_G_Soldier_SL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_LAT_F","O_G_Soldier_LAT2_F",
+		"O_G_medic_F","O_G_medic_F",
+		"O_G_Soldier_GL_F","O_G_Soldier_GL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_engineer_F","O_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Corporal","Private","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Sergeant","Corporal",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RD11 setGroupIDGlobal ["D 1 1"];
 RD11 addVehicle RD11V;
 Sleep 0.2;
 
 RD12 = [_RRPD12, EAST, [
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_officer_F","O_G_officer_F","O_G_engineer_F","O_G_engineer_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_GL_F",
-		"O_G_Soldier_AR_F","O_G_Soldier_AR_F","O_G_Soldier_F","O_G_Soldier_F"
+		"O_G_officer_F","O_G_officer_F",
+		"O_G_Soldier_SL_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_GL_F","O_G_Soldier_GL_F",
+		"O_G_medic_F","O_G_medic_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_engineer_F","O_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Lieutenant","Sergeant","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Lieutenant","Sergeant",
+		"Sergeant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RD12 setGroupIDGlobal ["D 1 2"];
 RD12 addVehicle RD12V;
 Sleep 0.2;
 
 RD13 = [_RRPD13, EAST, [
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_LAT_F","O_G_Soldier_LAT2_F","O_G_Soldier_lite_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_GL_F",
-		"O_G_Soldier_AR_F","O_G_Soldier_AR_F","O_G_Soldier_F","O_G_Soldier_F"
+		"O_G_Soldier_SL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_LAT2_F","O_G_Soldier_LAT_F",
+		"O_G_medic_F","O_G_medic_F",
+		"O_G_Soldier_GL_F","O_G_Soldier_GL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_engineer_F","O_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Corporal","Private","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Sergeant","Corporal",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RD13 setGroupIDGlobal ["D 1 3"];
 RD13 addVehicle RD13V;
 Sleep 0.2;
 
 RD21 = [_RRPD21, EAST, [
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_LAT_F","O_G_Soldier_LAT2_F","O_G_Soldier_lite_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_GL_F",
-		"O_G_Soldier_AR_F","O_G_Soldier_AR_F","O_G_Soldier_F","O_G_Soldier_F"
+		"O_G_Soldier_SL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_LAT_F","O_G_Soldier_LAT2_F",
+		"O_G_medic_F","O_G_medic_F",
+		"O_G_Soldier_GL_F","O_G_Soldier_GL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_engineer_F","O_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Corporal","Private","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Sergeant","Corporal",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RD21 setGroupIDGlobal ["D 2 1"];
 RD21 addVehicle RD21V;
 Sleep 0.2;
 
 RD22 = [_RRPD22, EAST, [
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_officer_F","O_G_officer_F","O_G_engineer_F","O_G_engineer_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_GL_F",
-		"O_G_Soldier_AR_F","O_G_Soldier_AR_F","O_G_Soldier_F","O_G_Soldier_F"
+		"O_G_officer_F","O_G_officer_F",
+		"O_G_Soldier_SL_F","O_G_Soldier_SL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_GL_F","O_G_Soldier_GL_F",
+		"O_G_medic_F","O_G_medic_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_engineer_F","O_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Lieutenant","Sergeant","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Lieutenant","Sergeant",
+		"Sergeant","Sergeant",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RD22 setGroupIDGlobal ["D 2 2"];
 RD22 addVehicle RD22V;
 Sleep 0.2;
 
 RD23 = [_RRPD23, EAST, [
-		"O_G_Soldier_SL_F","O_G_medic_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_LAT_F","O_G_Soldier_LAT2_F","O_G_Soldier_lite_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_TL_F","O_G_Soldier_GL_F","O_G_Soldier_GL_F",
-		"O_G_Soldier_AR_F","O_G_Soldier_AR_F","O_G_Soldier_F","O_G_Soldier_F"
+		"O_G_Soldier_SL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_TL_F","O_G_Soldier_TL_F",
+		"O_G_Soldier_LAT2_F","O_G_Soldier_LAT_F",
+		"O_G_medic_F","O_G_medic_F",
+		"O_G_Soldier_GL_F","O_G_Soldier_GL_F",
+		"O_G_Soldier_AR_F","O_G_Soldier_AR_F",
+		"O_G_engineer_F","O_G_engineer_F"
 	],[],[
-		"Sergeant","Private",
-		"Corporal","Private","Private","Private",
-		"Corporal","Corporal","Private","Private",
-		"Private","Private","Private","Private"
+		"Sergeant","Corporal",
+		"Corporal","Corporal",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private",
+		"Private","Private"
 ],[],[],[],0] call BIS_fnc_spawnGroup;
 RD23 setGroupIDGlobal ["D 2 3"];
 RD23 addVehicle RD23V;
 Sleep 0.2;
 
 RD31 = [_RRPD31A, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_F","O_G_Soldier_SL_F","O_G_Soldier_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_F","O_G_medic_F","O_G_Soldier_F"
+		"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F",
+		"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F",
+		"O_G_engineer_F","O_G_engineer_F","O_G_medic_F","O_G_medic_F"
 	],[],[
 		"Private","Lieutenant","Corporal",
 		"Private","Sergeant","Corporal",
@@ -228,9 +249,9 @@ Units RD31 select 5 moveInGunner RD31VB;
 Sleep 0.2;
 
 RD32 = [_RRPD32A, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_F","O_G_Soldier_SL_F","O_G_Soldier_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_F","O_G_medic_F","O_G_Soldier_F"
+		"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F",
+		"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F",
+		"O_G_engineer_F","O_G_engineer_F","O_G_medic_F","O_G_medic_F"
 	],[],[
 		"Private","Sergeant","Corporal",
 		"Private","Sergeant","Corporal",
@@ -249,9 +270,9 @@ Units RD32 select 5 moveInGunner RD32VB;
 Sleep 0.2;
 
 RD41 = [_RRPD41A, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_F","O_G_Soldier_SL_F","O_G_Soldier_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_F","O_G_medic_F","O_G_Soldier_F"
+		"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F",
+		"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F",
+		"O_G_engineer_F","O_G_engineer_F","O_G_medic_F","O_G_medic_F"
 	],[],[
 		"Private","Lieutenant","Corporal",
 		"Private","Sergeant","Corporal",
@@ -270,9 +291,9 @@ Units RD41 select 5 moveInGunner RD41VB;
 Sleep 0.2;
 
 RD42 = [_RRPD42A, EAST, [
-		"O_G_Soldier_F","O_G_officer_F","O_G_Soldier_F",
-		"O_G_Soldier_F","O_G_Soldier_SL_F","O_G_Soldier_F",
-		"O_G_Soldier_TL_F","O_G_Soldier_F","O_G_medic_F","O_G_Soldier_F"
+		"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F",
+		"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_F",
+		"O_G_engineer_F","O_G_engineer_F","O_G_medic_F","O_G_medic_F"
 	],[],[
 		"Private","Sergeant","Corporal",
 		"Private","Sergeant","Corporal",
@@ -428,3 +449,16 @@ _WPRD41 setWaypointType "GetIn";
 _WPRD42 = RD42 addWaypoint [RD42VA, 0];
 _WPRD42 setWaypointFormation  "File";
 _WPRD42 setWaypointType "GetIn";
+
+PublicVariable "RD11";
+PublicVariable "RD12";
+PublicVariable "RD13";
+PublicVariable "RD21";
+PublicVariable "RD22";
+PublicVariable "RD23";
+PublicVariable "RD31";
+PublicVariable "RD32";
+PublicVariable "RD41";
+PublicVariable "RD42";
+
+//[Format ["BA11 is on machine %1. RA11 is on machine %2", groupOwner BA11, groupOwner RA11]] remoteExec ["HintSilent", 0];
